@@ -16,5 +16,17 @@ namespace TeslimatTakip
         {
             InitializeComponent();
         }
+
+        private void gönderiOluşturToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGonderiOlustur frmge = new FormGonderiOlustur();
+            frmge.ShowDialog();
+        }
+
+        private void gönderiListeleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGonderiListele frmgl = new FormGonderiListele();
+            frmgl.ShowDialog();
+        }
     }
 }
