@@ -106,7 +106,7 @@
             this.dateTimePickerGonderilerSon.Location = new System.Drawing.Point(102, 51);
             this.dateTimePickerGonderilerSon.Name = "dateTimePickerGonderilerSon";
             this.dateTimePickerGonderilerSon.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerGonderilerSon.TabIndex = 6;
+            this.dateTimePickerGonderilerSon.TabIndex = 2;
             this.dateTimePickerGonderilerSon.ValueChanged += new System.EventHandler(this.dateTimePickerGonderilerSon_ValueChanged);
             // 
             // button1
@@ -114,7 +114,7 @@
             this.button1.Location = new System.Drawing.Point(733, 29);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 60);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Çıkış";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -126,7 +126,7 @@
             this.dataGridGonderiler.Location = new System.Drawing.Point(0, 140);
             this.dataGridGonderiler.Name = "dataGridGonderiler";
             this.dataGridGonderiler.Size = new System.Drawing.Size(844, 371);
-            this.dataGridGonderiler.TabIndex = 1;
+            this.dataGridGonderiler.TabIndex = 3;
             // 
             // FormGonderiListele
             // 

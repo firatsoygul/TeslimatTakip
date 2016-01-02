@@ -400,6 +400,8 @@ namespace TeslimatTakip {
             
             private global::System.Data.DataColumn columnAlıcı;
             
+            private global::System.Data.DataColumn columnŞube;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public GonderilerDataTable() {
@@ -499,6 +501,14 @@ namespace TeslimatTakip {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ŞubeColumn {
+                get {
+                    return this.columnŞube;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -534,7 +544,7 @@ namespace TeslimatTakip {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public GonderilerRow AddGonderilerRow(string Gönderen, System.DateTime Tarih, string Telefon, string Adres, string İçerik, decimal Ücret, string Alıcı) {
+            public GonderilerRow AddGonderilerRow(string Gönderen, System.DateTime Tarih, string Telefon, string Adres, string İçerik, decimal Ücret, string Alıcı, string Şube) {
                 GonderilerRow rowGonderilerRow = ((GonderilerRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -544,7 +554,8 @@ namespace TeslimatTakip {
                         Adres,
                         İçerik,
                         Ücret,
-                        Alıcı};
+                        Alıcı,
+                        Şube};
                 rowGonderilerRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowGonderilerRow);
                 return rowGonderilerRow;
@@ -582,6 +593,7 @@ namespace TeslimatTakip {
                 this.columnİçerik = base.Columns["İçerik"];
                 this.columnÜcret = base.Columns["Ücret"];
                 this.columnAlıcı = base.Columns["Alıcı"];
+                this.columnŞube = base.Columns["Şube"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -603,6 +615,8 @@ namespace TeslimatTakip {
                 base.Columns.Add(this.columnÜcret);
                 this.columnAlıcı = new global::System.Data.DataColumn("Alıcı", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAlıcı);
+                this.columnŞube = new global::System.Data.DataColumn("Şube", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnŞube);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnBarkod_No}, true));
                 this.columnBarkod_No.AutoIncrement = true;
@@ -616,6 +630,7 @@ namespace TeslimatTakip {
                 this.columnAdres.MaxLength = 70;
                 this.columnİçerik.MaxLength = 20;
                 this.columnAlıcı.MaxLength = 3;
+                this.columnŞube.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1785,6 +1800,22 @@ namespace TeslimatTakip {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Şube {
+                get {
+                    try {
+                        return ((string)(this[this.tableGonderiler.ŞubeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Şube\' in table \'Gonderiler\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGonderiler.ŞubeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsGönderenNull() {
                 return this.IsNull(this.tableGonderiler.GönderenColumn);
             }
@@ -1865,6 +1896,18 @@ namespace TeslimatTakip {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetAlıcıNull() {
                 this[this.tableGonderiler.AlıcıColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsŞubeNull() {
+                return this.IsNull(this.tableGonderiler.ŞubeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetŞubeNull() {
+                this[this.tableGonderiler.ŞubeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2405,10 +2448,11 @@ namespace TeslimatTakip.DataSetTeslimatTableAdapters {
             tableMapping.ColumnMappings.Add("İçerik", "İçerik");
             tableMapping.ColumnMappings.Add("Ücret", "Ücret");
             tableMapping.ColumnMappings.Add("Alıcı", "Alıcı");
+            tableMapping.ColumnMappings.Add("Şube", "Şube");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Gonderiler] WHERE (([Gonderi_Barkod] = @Original_Barkod_No) AND ((@IsNull_Gönderen = 1 AND [Gonderi_isim] IS NULL) OR ([Gonderi_isim] = @Original_Gönderen)) AND ((@IsNull_Alıcı = 1 AND [Gonderi_Alici] IS NULL) OR ([Gonderi_Alici] = @Original_Alıcı)) AND ((@IsNull_Tarih = 1 AND [Gonderi_Tarih] IS NULL) OR ([Gonderi_Tarih] = @Original_Tarih)) AND ((@IsNull_Telefon = 1 AND [Gonderi_Telefon] IS NULL) OR ([Gonderi_Telefon] = @Original_Telefon)) AND ((@IsNull_Adres = 1 AND [Gonderi_Adres] IS NULL) OR ([Gonderi_Adres] = @Original_Adres)) AND ((@IsNull_İçerik = 1 AND [Gonderi_icerik] IS NULL) OR ([Gonderi_icerik] = @Original_İçerik)) AND ((@IsNull_Ücret = 1 AND [Gonderi_Ucret] IS NULL) OR ([Gonderi_Ucret] = @Original_Ücret)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Gonderiler] WHERE (([Gonderi_Barkod] = @Original_Barkod_No) AND ((@IsNull_Gönderen = 1 AND [Gonderi_isim] IS NULL) OR ([Gonderi_isim] = @Original_Gönderen)) AND ((@IsNull_Alıcı = 1 AND [Gonderi_Alici] IS NULL) OR ([Gonderi_Alici] = @Original_Alıcı)) AND ((@IsNull_Tarih = 1 AND [Gonderi_Tarih] IS NULL) OR ([Gonderi_Tarih] = @Original_Tarih)) AND ((@IsNull_Telefon = 1 AND [Gonderi_Telefon] IS NULL) OR ([Gonderi_Telefon] = @Original_Telefon)) AND ((@IsNull_Adres = 1 AND [Gonderi_Adres] IS NULL) OR ([Gonderi_Adres] = @Original_Adres)) AND ((@IsNull_İçerik = 1 AND [Gonderi_icerik] IS NULL) OR ([Gonderi_icerik] = @Original_İçerik)) AND ((@IsNull_Ücret = 1 AND [Gonderi_Ucret] IS NULL) OR ([Gonderi_Ucret] = @Original_Ücret)) AND ((@IsNull_Şube = 1 AND [Sube_isim] IS NULL) OR ([Sube_isim] = @Original_Şube)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gönderen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -2425,10 +2469,12 @@ namespace TeslimatTakip.DataSetTeslimatTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İçerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ücret", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ücret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Şube", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Şube", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Gonderiler] ([Gonderi_isim], [Gonderi_Alici], [Gonderi_Tarih], [Gonderi_Telefon], [Gonderi_Adres], [Gonderi_icerik], [Gonderi_Ucret]) VALUES (@Gönderen, @Alıcı, @Tarih, @Telefon, @Adres, @İçerik, @Ücret);
-SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret' FROM Gonderiler WHERE (Gonderi_Barkod = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Gonderiler] ([Gonderi_isim], [Gonderi_Alici], [Gonderi_Tarih], [Gonderi_Telefon], [Gonderi_Adres], [Gonderi_icerik], [Gonderi_Ucret], [Sube_isim]) VALUES (@Gönderen, @Alıcı, @Tarih, @Telefon, @Adres, @İçerik, @Ücret, @Şube);
+SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret', Sube_isim AS 'Şube' FROM Gonderiler WHERE (Gonderi_Barkod = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gönderen", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2437,10 +2483,11 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İçerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ücret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Şube", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [Gonderiler] SET [Gonderi_isim] = @Gönderen, [Gonderi_Alici] = @Alıcı, [Gonderi_Tarih] = @Tarih, [Gonderi_Telefon] = @Telefon, [Gonderi_Adres] = @Adres, [Gonderi_icerik] = @İçerik, [Gonderi_Ucret] = @Ücret WHERE (([Gonderi_Barkod] = @Original_Barkod_No) AND ((@IsNull_Gönderen = 1 AND [Gonderi_isim] IS NULL) OR ([Gonderi_isim] = @Original_Gönderen)) AND ((@IsNull_Alıcı = 1 AND [Gonderi_Alici] IS NULL) OR ([Gonderi_Alici] = @Original_Alıcı)) AND ((@IsNull_Tarih = 1 AND [Gonderi_Tarih] IS NULL) OR ([Gonderi_Tarih] = @Original_Tarih)) AND ((@IsNull_Telefon = 1 AND [Gonderi_Telefon] IS NULL) OR ([Gonderi_Telefon] = @Original_Telefon)) AND ((@IsNull_Adres = 1 AND [Gonderi_Adres] IS NULL) OR ([Gonderi_Adres] = @Original_Adres)) AND ((@IsNull_İçerik = 1 AND [Gonderi_icerik] IS NULL) OR ([Gonderi_icerik] = @Original_İçerik)) AND ((@IsNull_Ücret = 1 AND [Gonderi_Ucret] IS NULL) OR ([Gonderi_Ucret] = @Original_Ücret)));
-SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret' FROM Gonderiler WHERE (Gonderi_Barkod = @Gonderi_Barkod)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Gonderiler] SET [Gonderi_isim] = @Gönderen, [Gonderi_Alici] = @Alıcı, [Gonderi_Tarih] = @Tarih, [Gonderi_Telefon] = @Telefon, [Gonderi_Adres] = @Adres, [Gonderi_icerik] = @İçerik, [Gonderi_Ucret] = @Ücret, [Sube_isim] = @Şube WHERE (([Gonderi_Barkod] = @Original_Barkod_No) AND ((@IsNull_Gönderen = 1 AND [Gonderi_isim] IS NULL) OR ([Gonderi_isim] = @Original_Gönderen)) AND ((@IsNull_Alıcı = 1 AND [Gonderi_Alici] IS NULL) OR ([Gonderi_Alici] = @Original_Alıcı)) AND ((@IsNull_Tarih = 1 AND [Gonderi_Tarih] IS NULL) OR ([Gonderi_Tarih] = @Original_Tarih)) AND ((@IsNull_Telefon = 1 AND [Gonderi_Telefon] IS NULL) OR ([Gonderi_Telefon] = @Original_Telefon)) AND ((@IsNull_Adres = 1 AND [Gonderi_Adres] IS NULL) OR ([Gonderi_Adres] = @Original_Adres)) AND ((@IsNull_İçerik = 1 AND [Gonderi_icerik] IS NULL) OR ([Gonderi_icerik] = @Original_İçerik)) AND ((@IsNull_Ücret = 1 AND [Gonderi_Ucret] IS NULL) OR ([Gonderi_Ucret] = @Original_Ücret)) AND ((@IsNull_Şube = 1 AND [Sube_isim] IS NULL) OR ([Sube_isim] = @Original_Şube)));
+SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret', Sube_isim AS 'Şube' FROM Gonderiler WHERE (Gonderi_Barkod = @Gonderi_Barkod)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gönderen", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2449,6 +2496,7 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İçerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ücret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Şube", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gönderen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gönderen", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -2464,6 +2512,8 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İçerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ücret", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ücret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Şube", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Şube", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Barkod", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -2480,22 +2530,19 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret'
+            this._commandCollection[0].CommandText = @"SELECT        Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', 
+                         Gonderi_Ucret AS 'Ücret', Sube_isim AS 'Şube'
 FROM            Gonderiler";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT        Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret'
-FROM            Gonderiler 
-WHERE Gonderi_Tarih BETWEEN @Tarih1 AND @Tarih2";
+            this._commandCollection[1].CommandText = @"SELECT Gonderi_Adres AS Adres, Gonderi_Alici AS Alıcı, Gonderi_Barkod AS [Barkod No], Gonderi_Tarih AS Tarih, Gonderi_Telefon AS Telefon, Gonderi_Ucret AS Ücret, Gonderi_icerik AS İçerik, Gonderi_isim AS Gönderen FROM Gonderiler WHERE (Gonderi_Tarih BETWEEN @Tarih1 AND @Tarih2)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih1", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih2", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = @"SELECT        Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret'
-FROM            Gonderiler 
-WHERE Gonderi_Tarih IN ('@Tarih')";
+            this._commandCollection[2].CommandText = @"SELECT Gonderi_Adres AS Adres, Gonderi_Alici AS Alıcı, Gonderi_Barkod AS [Barkod No], Gonderi_Tarih AS Tarih, Gonderi_Telefon AS Telefon, Gonderi_Ucret AS Ücret, Gonderi_icerik AS İçerik, Gonderi_isim AS Gönderen FROM Gonderiler WHERE (Gonderi_Tarih IN ('@Tarih'))";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
@@ -2506,9 +2553,10 @@ WHERE Gonderi_Tarih IN ('@Tarih')";
 [Gonderi_Adres], 
 [Gonderi_icerik], 
 [Gonderi_Ucret],
-[Gonderi_Alici]
+[Gonderi_Alici],
+[Sube_isim]
 ) 
-VALUES (@Gonderen, @Alici, @Tarih, @Telefon, @Adres, @icerik, @Ucret);
+VALUES (@Gonderen, @Alici, @Tarih, @Telefon, @Adres, @icerik, @Ucret, @Subeisim);
 SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret' FROM Gonderiler WHERE (Gonderi_Barkod = SCOPE_IDENTITY())";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderen", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_isim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2518,6 +2566,7 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Tarih
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Adres", global::System.Data.SqlDbType.NVarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_icerik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@icerik", global::System.Data.SqlDbType.Money, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Ucret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ucret", global::System.Data.SqlDbType.NVarChar, 3, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Alici", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Subeisim", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_isim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2649,7 +2698,7 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Tarih
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertGonderiEkle(string Gonderen, global::System.Nullable<global::System.DateTime> Alici, string Tarih, string Telefon, string Adres, global::System.Nullable<decimal> icerik, string Ucret) {
+        public virtual int InsertGonderiEkle(string Gonderen, global::System.Nullable<global::System.DateTime> Alici, string Tarih, string Telefon, string Adres, global::System.Nullable<decimal> icerik, string Ucret, string Subeisim) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
             if ((Gonderen == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
@@ -2692,6 +2741,12 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Tarih
             }
             else {
                 command.Parameters[6].Value = ((string)(Ucret));
+            }
+            if ((Subeisim == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(Subeisim));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2845,14 +2900,15 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Tarih
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [Subeler] ([Sube_ismi]) VALUES (@Şube_İsmi);\r\nSELECT Sube_id AS \'Şube" +
-                " No\', Sube_ismi AS \'Şube İsmi\' FROM Subeler WHERE (Sube_id = SCOPE_IDENTITY())";
+                " No\', Sube_ismi AS \'Şube İsmi\' FROM Subeler WHERE (Sube_id = SCOPE_IDENTITY()) O" +
+                "RDER BY \'Şube No\'";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Şube_İsmi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube İsmi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [Subeler] SET [Sube_ismi] = @Şube_İsmi WHERE (([Sube_id] = @Original_Şube_" +
                 "No) AND ([Sube_ismi] = @Original_Şube_İsmi));\r\nSELECT Sube_id AS \'Şube No\', Sube" +
-                "_ismi AS \'Şube İsmi\' FROM Subeler WHERE (Sube_id = @Sube_id)";
+                "_ismi AS \'Şube İsmi\' FROM Subeler WHERE (Sube_id = @Sube_id) ORDER BY \'Şube No\'";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Şube_İsmi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube İsmi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Şube_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -2870,19 +2926,34 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Tarih
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Subeler.Sube_id AS \'Şube No\', \r\nSubeler.Sube_ismi AS \'Şube İsmi\' \r\n" +
-                "FROM            Subeler";
+            this._commandCollection[0].CommandText = "SELECT        Subeler.Sube_id AS \'Şube No\', \r\nSubeler.Sube_ismi AS \'Şube İsmi\'\r\nF" +
+                "ROM            Subeler \r\nORDER BY Sube_id ASC";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "INSERT INTO [Subeler] ([Sube_ismi]) \r\nVALUES (@Sube_ismi);\r\nSELECT Sube_id AS \'Şu" +
-                "be No\', Sube_isim AS \'Şube İsmi\' FROM Subeler WHERE (Sube_id = SCOPE_IDENTITY())" +
-                "";
+            this._commandCollection[1].CommandText = "DELETE FROM Subeler WHERE Sube_id = @SubeNo";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sube_ismi", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_ismi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SubeNo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT Sube_id AS [Şube No] FROM Subeler WHERE (Sube_ismi LIKE \'@isim%\') ORDER BY" +
+                " Sube_ismi";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "INSERT INTO Subeler\r\n                         (Sube_ismi)\r\nVALUES        (@Sube_i" +
+                "smi)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sube_ismi", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_ismi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "UPDATE Subeler \r\nSET Sube_ismi = @Subeismi \r\nWHERE (Sube_id = @SubeNo)";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Subeismi", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_ismi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SubeNo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2904,6 +2975,30 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Tarih
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSetTeslimat.SubelerDataTable GetSubeListele() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSetTeslimat.SubelerDataTable dataTable = new DataSetTeslimat.SubelerDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillSubeListeleisimAra(DataSetTeslimat.SubelerDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetTeslimat.SubelerDataTable GetSubeListeleisimAra() {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             DataSetTeslimat.SubelerDataTable dataTable = new DataSetTeslimat.SubelerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -3039,15 +3134,69 @@ SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Tarih
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
+        public virtual int DeleteSubeSil(int SubeNo) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(SubeNo));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
         public virtual int InsertSubeEkle(string Sube_ismi) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
             if ((Sube_ismi == null)) {
                 throw new global::System.ArgumentNullException("Sube_ismi");
             }
             else {
                 command.Parameters[0].Value = ((string)(Sube_ismi));
             }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateSubeGuncelle(string Subeismi, int SubeNo) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
+            if ((Subeismi == null)) {
+                throw new global::System.ArgumentNullException("Subeismi");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Subeismi));
+            }
+            command.Parameters[1].Value = ((int)(SubeNo));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -3696,7 +3845,7 @@ SELECT Geri_Bildirim_id AS 'Geri Bildirim No', Gonderi_Barkod AS 'Barkod No', Ge
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT        Geri_Bildirim_id AS 'Geri Bildirim No', Gonderi_Barkod AS 'Barkod No', Geri_Bildirim_Tarih AS Tarih, Geri_Bildirim_Aciklamasi AS 'Açıklama'
+            this._commandCollection[1].CommandText = @"SELECT        Geri_Bildirim_id AS 'Geri Bildirim No', Gonderi_Barkod AS 'Barkod No', Geri_Bildirim_Tarih AS 'Tarih', Geri_Bildirim_Aciklamasi AS 'Açıklama'
 FROM            Geri_Bildirim
 WHERE        (Gonderi_Barkod IN (@Barkod)) AND (Geri_Bildirim_Tarih BETWEEN @Tarih1 AND @Tarih2)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;

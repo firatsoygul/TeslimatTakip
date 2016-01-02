@@ -22,6 +22,10 @@ namespace TeslimatTakip
             //Form açılışında gönderiler listeleniyor.
             DataSetTeslimatTableAdapters.GonderilerTableAdapter taGonderiler = new DataSetTeslimatTableAdapters.GonderilerTableAdapter();
             dataGridGonderiOlustur.DataSource = taGonderiler.GetGonderiListele();
+            //Şubeler comboboxa alınıyor
+            DataSetTeslimatTableAdapters.SubelerTableAdapter taSubeCek = new DataSetTeslimatTableAdapters.SubelerTableAdapter();
+            comboBoxSube.DataSource = taSubeCek.GetSubeListele();
+            comboBoxSube.DisplayMember = "Şube İsmi";
         }
 
         private void buttonOlustur_Click(object sender, EventArgs e)
@@ -31,7 +35,7 @@ namespace TeslimatTakip
                 //Ekle butonu ile yeni gönderi ekleniyor.
                 DataSetTeslimatTableAdapters.GonderilerTableAdapter taGonderiler = new DataSetTeslimatTableAdapters.GonderilerTableAdapter();
                 //Girilen içerik datasete yükleniyor.
-                taGonderiler.InsertGonderiEkle(textBoxisim.Text, DateTime.Now, textBoxTelefon.Text, textBoxAdres.Text, textBoxicerik.Text, Convert.ToDecimal(textBoxUcret.Text), textBoxAlici.Text);
+                taGonderiler.InsertGonderiEkle(textBoxisim.Text, DateTime.Now, textBoxTelefon.Text, textBoxAdres.Text, textBoxicerik.Text, Convert.ToDecimal(textBoxUcret.Text), textBoxAlici.Text,comboBoxSube.Text);
                 dataGridGonderiOlustur.DataSource = taGonderiler.GetGonderiListele();
             }
             catch (Exception)

@@ -60,6 +60,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSetTeslimat.cs">
+      <DependentUpon>DataSetTeslimat.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DataSetTeslimat.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

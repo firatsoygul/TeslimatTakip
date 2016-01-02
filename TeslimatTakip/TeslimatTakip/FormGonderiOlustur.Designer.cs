@@ -43,9 +43,9 @@
             this.textBoxAdres = new System.Windows.Forms.TextBox();
             this.textBoxUcret = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBoxSube = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.textBoxAlici = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBoxSube = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridGonderiOlustur)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +57,7 @@
             this.dataGridGonderiOlustur.Location = new System.Drawing.Point(0, 130);
             this.dataGridGonderiOlustur.Name = "dataGridGonderiOlustur";
             this.dataGridGonderiOlustur.Size = new System.Drawing.Size(884, 381);
-            this.dataGridGonderiOlustur.TabIndex = 1;
+            this.dataGridGonderiOlustur.TabIndex = 9;
             // 
             // label1
             // 
@@ -77,10 +77,10 @@
             // 
             // buttonOlustur
             // 
-            this.buttonOlustur.Location = new System.Drawing.Point(784, 22);
+            this.buttonOlustur.Location = new System.Drawing.Point(784, 21);
             this.buttonOlustur.Name = "buttonOlustur";
             this.buttonOlustur.Size = new System.Drawing.Size(75, 60);
-            this.buttonOlustur.TabIndex = 2;
+            this.buttonOlustur.TabIndex = 7;
             this.buttonOlustur.Text = "Ekle";
             this.buttonOlustur.UseVisualStyleBackColor = true;
             this.buttonOlustur.Click += new System.EventHandler(this.buttonOlustur_Click);
@@ -90,7 +90,7 @@
             this.buttoniptal.Location = new System.Drawing.Point(784, 89);
             this.buttoniptal.Name = "buttoniptal";
             this.buttoniptal.Size = new System.Drawing.Size(75, 23);
-            this.buttoniptal.TabIndex = 3;
+            this.buttoniptal.TabIndex = 8;
             this.buttoniptal.Text = "İptal";
             this.buttoniptal.UseVisualStyleBackColor = true;
             this.buttoniptal.Click += new System.EventHandler(this.buttoniptal_Click);
@@ -152,7 +152,7 @@
             this.textBoxTelefon.Location = new System.Drawing.Point(349, 86);
             this.textBoxTelefon.Name = "textBoxTelefon";
             this.textBoxTelefon.Size = new System.Drawing.Size(170, 20);
-            this.textBoxTelefon.TabIndex = 10;
+            this.textBoxTelefon.TabIndex = 4;
             // 
             // textBoxAdres
             // 
@@ -160,14 +160,14 @@
             this.textBoxAdres.Multiline = true;
             this.textBoxAdres.Name = "textBoxAdres";
             this.textBoxAdres.Size = new System.Drawing.Size(170, 50);
-            this.textBoxAdres.TabIndex = 11;
+            this.textBoxAdres.TabIndex = 3;
             // 
             // textBoxUcret
             // 
             this.textBoxUcret.Location = new System.Drawing.Point(581, 22);
             this.textBoxUcret.Name = "textBoxUcret";
             this.textBoxUcret.Size = new System.Drawing.Size(170, 20);
-            this.textBoxUcret.TabIndex = 12;
+            this.textBoxUcret.TabIndex = 5;
             // 
             // panel1
             // 
@@ -193,13 +193,12 @@
             this.panel1.Size = new System.Drawing.Size(884, 130);
             this.panel1.TabIndex = 0;
             // 
-            // comboBoxSube
+            // textBoxAlici
             // 
-            this.comboBoxSube.FormattingEnabled = true;
-            this.comboBoxSube.Location = new System.Drawing.Point(581, 56);
-            this.comboBoxSube.Name = "comboBoxSube";
-            this.comboBoxSube.Size = new System.Drawing.Size(170, 21);
-            this.comboBoxSube.TabIndex = 13;
+            this.textBoxAlici.Location = new System.Drawing.Point(104, 54);
+            this.textBoxAlici.Name = "textBoxAlici";
+            this.textBoxAlici.Size = new System.Drawing.Size(170, 20);
+            this.textBoxAlici.TabIndex = 2;
             // 
             // label7
             // 
@@ -210,12 +209,13 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Alıcı :";
             // 
-            // textBoxAlici
+            // comboBoxSube
             // 
-            this.textBoxAlici.Location = new System.Drawing.Point(104, 54);
-            this.textBoxAlici.Name = "textBoxAlici";
-            this.textBoxAlici.Size = new System.Drawing.Size(170, 20);
-            this.textBoxAlici.TabIndex = 15;
+            this.comboBoxSube.FormattingEnabled = true;
+            this.comboBoxSube.Location = new System.Drawing.Point(581, 56);
+            this.comboBoxSube.Name = "comboBoxSube";
+            this.comboBoxSube.Size = new System.Drawing.Size(170, 21);
+            this.comboBoxSube.TabIndex = 6;
             // 
             // FormGonderiOlustur
             // 

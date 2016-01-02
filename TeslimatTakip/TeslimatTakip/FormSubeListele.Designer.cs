@@ -41,14 +41,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(452, 100);
+            this.panel1.Size = new System.Drawing.Size(452, 140);
             this.panel1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(352, 36);
+            this.button1.Location = new System.Drawing.Point(352, 33);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 67);
             this.button1.TabIndex = 2;
             this.button1.Text = "Çıkış";
             this.button1.UseVisualStyleBackColor = true;
@@ -58,8 +58,9 @@
             // 
             this.dataGridSubeler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridSubeler.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridSubeler.Location = new System.Drawing.Point(0, 100);
+            this.dataGridSubeler.Location = new System.Drawing.Point(0, 140);
             this.dataGridSubeler.Name = "dataGridSubeler";
+            this.dataGridSubeler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridSubeler.Size = new System.Drawing.Size(452, 267);
             this.dataGridSubeler.TabIndex = 1;
             // 
@@ -67,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 367);
+            this.ClientSize = new System.Drawing.Size(452, 407);
             this.Controls.Add(this.dataGridSubeler);
             this.Controls.Add(this.panel1);
             this.Name = "FormSubeListele";
