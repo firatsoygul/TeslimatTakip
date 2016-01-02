@@ -30,7 +30,7 @@
         {
             this.dataGridGonderiOlustur = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxisim = new System.Windows.Forms.TextBox();
             this.buttonOlustur = new System.Windows.Forms.Button();
             this.buttoniptal = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,12 +38,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxicerik = new System.Windows.Forms.TextBox();
+            this.textBoxTelefon = new System.Windows.Forms.TextBox();
+            this.textBoxAdres = new System.Windows.Forms.TextBox();
+            this.textBoxUcret = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSube = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxAlici = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridGonderiOlustur)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +56,7 @@
             this.dataGridGonderiOlustur.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridGonderiOlustur.Location = new System.Drawing.Point(0, 130);
             this.dataGridGonderiOlustur.Name = "dataGridGonderiOlustur";
-            this.dataGridGonderiOlustur.Size = new System.Drawing.Size(844, 381);
+            this.dataGridGonderiOlustur.Size = new System.Drawing.Size(884, 381);
             this.dataGridGonderiOlustur.TabIndex = 1;
             // 
             // label1
@@ -66,35 +68,37 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Gönderen İsim :";
             // 
-            // textBox1
+            // textBoxisim
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 20);
-            this.textBox1.TabIndex = 1;
+            this.textBoxisim.Location = new System.Drawing.Point(104, 22);
+            this.textBoxisim.Name = "textBoxisim";
+            this.textBoxisim.Size = new System.Drawing.Size(170, 20);
+            this.textBoxisim.TabIndex = 1;
             // 
             // buttonOlustur
             // 
-            this.buttonOlustur.Location = new System.Drawing.Point(757, 22);
+            this.buttonOlustur.Location = new System.Drawing.Point(784, 22);
             this.buttonOlustur.Name = "buttonOlustur";
             this.buttonOlustur.Size = new System.Drawing.Size(75, 60);
             this.buttonOlustur.TabIndex = 2;
             this.buttonOlustur.Text = "Ekle";
             this.buttonOlustur.UseVisualStyleBackColor = true;
+            this.buttonOlustur.Click += new System.EventHandler(this.buttonOlustur_Click);
             // 
             // buttoniptal
             // 
-            this.buttoniptal.Location = new System.Drawing.Point(757, 89);
+            this.buttoniptal.Location = new System.Drawing.Point(784, 89);
             this.buttoniptal.Name = "buttoniptal";
             this.buttoniptal.Size = new System.Drawing.Size(75, 23);
             this.buttoniptal.TabIndex = 3;
             this.buttoniptal.Text = "İptal";
             this.buttoniptal.UseVisualStyleBackColor = true;
+            this.buttoniptal.Click += new System.EventHandler(this.buttoniptal_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 59);
+            this.label2.Location = new System.Drawing.Point(17, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 4;
@@ -121,7 +125,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 89);
+            this.label5.Location = new System.Drawing.Point(536, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 7;
@@ -130,76 +134,94 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(529, 27);
+            this.label6.Location = new System.Drawing.Point(539, 61);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 8;
             this.label6.Text = "Şube :";
             // 
-            // textBox2
+            // textBoxicerik
             // 
-            this.textBox2.Location = new System.Drawing.Point(104, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 20);
-            this.textBox2.TabIndex = 9;
+            this.textBoxicerik.Location = new System.Drawing.Point(104, 86);
+            this.textBoxicerik.Name = "textBoxicerik";
+            this.textBoxicerik.Size = new System.Drawing.Size(170, 20);
+            this.textBoxicerik.TabIndex = 9;
             // 
-            // textBox3
+            // textBoxTelefon
             // 
-            this.textBox3.Location = new System.Drawing.Point(349, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(170, 20);
-            this.textBox3.TabIndex = 10;
+            this.textBoxTelefon.Location = new System.Drawing.Point(349, 86);
+            this.textBoxTelefon.Name = "textBoxTelefon";
+            this.textBoxTelefon.Size = new System.Drawing.Size(170, 20);
+            this.textBoxTelefon.TabIndex = 10;
             // 
-            // textBox4
+            // textBoxAdres
             // 
-            this.textBox4.Location = new System.Drawing.Point(349, 22);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(170, 50);
-            this.textBox4.TabIndex = 11;
+            this.textBoxAdres.Location = new System.Drawing.Point(349, 22);
+            this.textBoxAdres.Multiline = true;
+            this.textBoxAdres.Name = "textBoxAdres";
+            this.textBoxAdres.Size = new System.Drawing.Size(170, 50);
+            this.textBoxAdres.TabIndex = 11;
             // 
-            // textBox5
+            // textBoxUcret
             // 
-            this.textBox5.Location = new System.Drawing.Point(104, 86);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(170, 20);
-            this.textBox5.TabIndex = 12;
+            this.textBoxUcret.Location = new System.Drawing.Point(581, 22);
+            this.textBoxUcret.Name = "textBoxUcret";
+            this.textBoxUcret.Size = new System.Drawing.Size(170, 20);
+            this.textBoxUcret.TabIndex = 12;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textBoxAlici);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.comboBoxSube);
+            this.panel1.Controls.Add(this.textBoxUcret);
+            this.panel1.Controls.Add(this.textBoxAdres);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBoxTelefon);
+            this.panel1.Controls.Add(this.textBoxicerik);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.buttoniptal);
             this.panel1.Controls.Add(this.buttonOlustur);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textBoxisim);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(844, 130);
+            this.panel1.Size = new System.Drawing.Size(884, 130);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox1
+            // comboBoxSube
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(571, 22);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 21);
-            this.comboBox1.TabIndex = 13;
+            this.comboBoxSube.FormattingEnabled = true;
+            this.comboBoxSube.Location = new System.Drawing.Point(581, 56);
+            this.comboBoxSube.Name = "comboBoxSube";
+            this.comboBoxSube.Size = new System.Drawing.Size(170, 21);
+            this.comboBoxSube.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(66, 61);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Alıcı :";
+            // 
+            // textBoxAlici
+            // 
+            this.textBoxAlici.Location = new System.Drawing.Point(104, 54);
+            this.textBoxAlici.Name = "textBoxAlici";
+            this.textBoxAlici.Size = new System.Drawing.Size(170, 20);
+            this.textBoxAlici.TabIndex = 15;
             // 
             // FormGonderiOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 511);
+            this.ClientSize = new System.Drawing.Size(884, 511);
             this.Controls.Add(this.dataGridGonderiOlustur);
             this.Controls.Add(this.panel1);
             this.Name = "FormGonderiOlustur";
@@ -217,7 +239,7 @@
 
         private System.Windows.Forms.DataGridView dataGridGonderiOlustur;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxisim;
         private System.Windows.Forms.Button buttonOlustur;
         private System.Windows.Forms.Button buttoniptal;
         private System.Windows.Forms.Label label2;
@@ -225,11 +247,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxicerik;
+        private System.Windows.Forms.TextBox textBoxTelefon;
+        private System.Windows.Forms.TextBox textBoxAdres;
+        private System.Windows.Forms.TextBox textBoxUcret;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxSube;
+        private System.Windows.Forms.TextBox textBoxAlici;
+        private System.Windows.Forms.Label label7;
     }
 }

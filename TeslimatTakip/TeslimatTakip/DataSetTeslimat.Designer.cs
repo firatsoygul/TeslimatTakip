@@ -26,6 +26,12 @@ namespace TeslimatTakip {
         
         private GonderilerDataTable tableGonderiler;
         
+        private SubelerDataTable tableSubeler;
+        
+        private TeslimatlarDataTable tableTeslimatlar;
+        
+        private Geri_BildirimDataTable tableGeri_Bildirim;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -57,6 +63,15 @@ namespace TeslimatTakip {
                 if ((ds.Tables["Gonderiler"] != null)) {
                     base.Tables.Add(new GonderilerDataTable(ds.Tables["Gonderiler"]));
                 }
+                if ((ds.Tables["Subeler"] != null)) {
+                    base.Tables.Add(new SubelerDataTable(ds.Tables["Subeler"]));
+                }
+                if ((ds.Tables["Teslimatlar"] != null)) {
+                    base.Tables.Add(new TeslimatlarDataTable(ds.Tables["Teslimatlar"]));
+                }
+                if ((ds.Tables["Geri_Bildirim"] != null)) {
+                    base.Tables.Add(new Geri_BildirimDataTable(ds.Tables["Geri_Bildirim"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -82,6 +97,36 @@ namespace TeslimatTakip {
         public GonderilerDataTable Gonderiler {
             get {
                 return this.tableGonderiler;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public SubelerDataTable Subeler {
+            get {
+                return this.tableSubeler;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public TeslimatlarDataTable Teslimatlar {
+            get {
+                return this.tableTeslimatlar;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public Geri_BildirimDataTable Geri_Bildirim {
+            get {
+                return this.tableGeri_Bildirim;
             }
         }
         
@@ -155,6 +200,15 @@ namespace TeslimatTakip {
                 if ((ds.Tables["Gonderiler"] != null)) {
                     base.Tables.Add(new GonderilerDataTable(ds.Tables["Gonderiler"]));
                 }
+                if ((ds.Tables["Subeler"] != null)) {
+                    base.Tables.Add(new SubelerDataTable(ds.Tables["Subeler"]));
+                }
+                if ((ds.Tables["Teslimatlar"] != null)) {
+                    base.Tables.Add(new TeslimatlarDataTable(ds.Tables["Teslimatlar"]));
+                }
+                if ((ds.Tables["Geri_Bildirim"] != null)) {
+                    base.Tables.Add(new Geri_BildirimDataTable(ds.Tables["Geri_Bildirim"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -194,6 +248,24 @@ namespace TeslimatTakip {
                     this.tableGonderiler.InitVars();
                 }
             }
+            this.tableSubeler = ((SubelerDataTable)(base.Tables["Subeler"]));
+            if ((initTable == true)) {
+                if ((this.tableSubeler != null)) {
+                    this.tableSubeler.InitVars();
+                }
+            }
+            this.tableTeslimatlar = ((TeslimatlarDataTable)(base.Tables["Teslimatlar"]));
+            if ((initTable == true)) {
+                if ((this.tableTeslimatlar != null)) {
+                    this.tableTeslimatlar.InitVars();
+                }
+            }
+            this.tableGeri_Bildirim = ((Geri_BildirimDataTable)(base.Tables["Geri_Bildirim"]));
+            if ((initTable == true)) {
+                if ((this.tableGeri_Bildirim != null)) {
+                    this.tableGeri_Bildirim.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -206,11 +278,35 @@ namespace TeslimatTakip {
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableGonderiler = new GonderilerDataTable();
             base.Tables.Add(this.tableGonderiler);
+            this.tableSubeler = new SubelerDataTable();
+            base.Tables.Add(this.tableSubeler);
+            this.tableTeslimatlar = new TeslimatlarDataTable();
+            base.Tables.Add(this.tableTeslimatlar);
+            this.tableGeri_Bildirim = new Geri_BildirimDataTable();
+            base.Tables.Add(this.tableGeri_Bildirim);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeGonderiler() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeSubeler() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeTeslimatlar() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeGeri_Bildirim() {
             return false;
         }
         
@@ -272,6 +368,15 @@ namespace TeslimatTakip {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void GonderilerRowChangeEventHandler(object sender, GonderilerRowChangeEvent e);
         
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void SubelerRowChangeEventHandler(object sender, SubelerRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void TeslimatlarRowChangeEventHandler(object sender, TeslimatlarRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void Geri_BildirimRowChangeEventHandler(object sender, Geri_BildirimRowChangeEvent e);
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
@@ -279,21 +384,21 @@ namespace TeslimatTakip {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class GonderilerDataTable : global::System.Data.TypedTableBase<GonderilerRow> {
             
-            private global::System.Data.DataColumn columnGonderi_Barkod;
+            private global::System.Data.DataColumn columnBarkod_No;
             
-            private global::System.Data.DataColumn columnSube_id;
+            private global::System.Data.DataColumn columnGönderen;
             
-            private global::System.Data.DataColumn columnGonderi_isim;
+            private global::System.Data.DataColumn columnTarih;
             
-            private global::System.Data.DataColumn columnGonderi_Adres;
+            private global::System.Data.DataColumn columnTelefon;
             
-            private global::System.Data.DataColumn columnGonderi_Telefon;
+            private global::System.Data.DataColumn columnAdres;
             
-            private global::System.Data.DataColumn columnGonderi_icerik;
+            private global::System.Data.DataColumn columnİçerik;
             
-            private global::System.Data.DataColumn columnGonderi_Ucret;
+            private global::System.Data.DataColumn columnÜcret;
             
-            private global::System.Data.DataColumn columnGonderi_Tarih;
+            private global::System.Data.DataColumn columnAlıcı;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -330,65 +435,65 @@ namespace TeslimatTakip {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Gonderi_BarkodColumn {
+            public global::System.Data.DataColumn Barkod_NoColumn {
                 get {
-                    return this.columnGonderi_Barkod;
+                    return this.columnBarkod_No;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Sube_idColumn {
+            public global::System.Data.DataColumn GönderenColumn {
                 get {
-                    return this.columnSube_id;
+                    return this.columnGönderen;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Gonderi_isimColumn {
+            public global::System.Data.DataColumn TarihColumn {
                 get {
-                    return this.columnGonderi_isim;
+                    return this.columnTarih;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Gonderi_AdresColumn {
+            public global::System.Data.DataColumn TelefonColumn {
                 get {
-                    return this.columnGonderi_Adres;
+                    return this.columnTelefon;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Gonderi_TelefonColumn {
+            public global::System.Data.DataColumn AdresColumn {
                 get {
-                    return this.columnGonderi_Telefon;
+                    return this.columnAdres;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Gonderi_icerikColumn {
+            public global::System.Data.DataColumn İçerikColumn {
                 get {
-                    return this.columnGonderi_icerik;
+                    return this.columnİçerik;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Gonderi_UcretColumn {
+            public global::System.Data.DataColumn ÜcretColumn {
                 get {
-                    return this.columnGonderi_Ucret;
+                    return this.columnÜcret;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Gonderi_TarihColumn {
+            public global::System.Data.DataColumn AlıcıColumn {
                 get {
-                    return this.columnGonderi_Tarih;
+                    return this.columnAlıcı;
                 }
             }
             
@@ -429,17 +534,17 @@ namespace TeslimatTakip {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public GonderilerRow AddGonderilerRow(int Sube_id, string Gonderi_isim, string Gonderi_Adres, string Gonderi_Telefon, string Gonderi_icerik, decimal Gonderi_Ucret, System.DateTime Gonderi_Tarih) {
+            public GonderilerRow AddGonderilerRow(string Gönderen, System.DateTime Tarih, string Telefon, string Adres, string İçerik, decimal Ücret, string Alıcı) {
                 GonderilerRow rowGonderilerRow = ((GonderilerRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        Sube_id,
-                        Gonderi_isim,
-                        Gonderi_Adres,
-                        Gonderi_Telefon,
-                        Gonderi_icerik,
-                        Gonderi_Ucret,
-                        Gonderi_Tarih};
+                        Gönderen,
+                        Tarih,
+                        Telefon,
+                        Adres,
+                        İçerik,
+                        Ücret,
+                        Alıcı};
                 rowGonderilerRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowGonderilerRow);
                 return rowGonderilerRow;
@@ -447,9 +552,9 @@ namespace TeslimatTakip {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public GonderilerRow FindByGonderi_Barkod(int Gonderi_Barkod) {
+            public GonderilerRow FindByBarkod_No(int Barkod_No) {
                 return ((GonderilerRow)(this.Rows.Find(new object[] {
-                            Gonderi_Barkod})));
+                            Barkod_No})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -469,47 +574,48 @@ namespace TeslimatTakip {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnGonderi_Barkod = base.Columns["Gonderi_Barkod"];
-                this.columnSube_id = base.Columns["Sube_id"];
-                this.columnGonderi_isim = base.Columns["Gonderi_isim"];
-                this.columnGonderi_Adres = base.Columns["Gonderi_Adres"];
-                this.columnGonderi_Telefon = base.Columns["Gonderi_Telefon"];
-                this.columnGonderi_icerik = base.Columns["Gonderi_icerik"];
-                this.columnGonderi_Ucret = base.Columns["Gonderi_Ucret"];
-                this.columnGonderi_Tarih = base.Columns["Gonderi_Tarih"];
+                this.columnBarkod_No = base.Columns["Barkod No"];
+                this.columnGönderen = base.Columns["Gönderen"];
+                this.columnTarih = base.Columns["Tarih"];
+                this.columnTelefon = base.Columns["Telefon"];
+                this.columnAdres = base.Columns["Adres"];
+                this.columnİçerik = base.Columns["İçerik"];
+                this.columnÜcret = base.Columns["Ücret"];
+                this.columnAlıcı = base.Columns["Alıcı"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnGonderi_Barkod = new global::System.Data.DataColumn("Gonderi_Barkod", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGonderi_Barkod);
-                this.columnSube_id = new global::System.Data.DataColumn("Sube_id", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSube_id);
-                this.columnGonderi_isim = new global::System.Data.DataColumn("Gonderi_isim", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGonderi_isim);
-                this.columnGonderi_Adres = new global::System.Data.DataColumn("Gonderi_Adres", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGonderi_Adres);
-                this.columnGonderi_Telefon = new global::System.Data.DataColumn("Gonderi_Telefon", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGonderi_Telefon);
-                this.columnGonderi_icerik = new global::System.Data.DataColumn("Gonderi_icerik", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGonderi_icerik);
-                this.columnGonderi_Ucret = new global::System.Data.DataColumn("Gonderi_Ucret", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGonderi_Ucret);
-                this.columnGonderi_Tarih = new global::System.Data.DataColumn("Gonderi_Tarih", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGonderi_Tarih);
+                this.columnBarkod_No = new global::System.Data.DataColumn("Barkod No", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBarkod_No);
+                this.columnGönderen = new global::System.Data.DataColumn("Gönderen", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGönderen);
+                this.columnTarih = new global::System.Data.DataColumn("Tarih", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTarih);
+                this.columnTelefon = new global::System.Data.DataColumn("Telefon", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTelefon);
+                this.columnAdres = new global::System.Data.DataColumn("Adres", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAdres);
+                this.columnİçerik = new global::System.Data.DataColumn("İçerik", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnİçerik);
+                this.columnÜcret = new global::System.Data.DataColumn("Ücret", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnÜcret);
+                this.columnAlıcı = new global::System.Data.DataColumn("Alıcı", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAlıcı);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnGonderi_Barkod}, true));
-                this.columnGonderi_Barkod.AutoIncrement = true;
-                this.columnGonderi_Barkod.AutoIncrementSeed = -1;
-                this.columnGonderi_Barkod.AutoIncrementStep = -1;
-                this.columnGonderi_Barkod.AllowDBNull = false;
-                this.columnGonderi_Barkod.ReadOnly = true;
-                this.columnGonderi_Barkod.Unique = true;
-                this.columnGonderi_isim.MaxLength = 50;
-                this.columnGonderi_Adres.MaxLength = 70;
-                this.columnGonderi_Telefon.MaxLength = 11;
-                this.columnGonderi_icerik.MaxLength = 20;
+                                this.columnBarkod_No}, true));
+                this.columnBarkod_No.AutoIncrement = true;
+                this.columnBarkod_No.AutoIncrementSeed = -1;
+                this.columnBarkod_No.AutoIncrementStep = -1;
+                this.columnBarkod_No.AllowDBNull = false;
+                this.columnBarkod_No.ReadOnly = true;
+                this.columnBarkod_No.Unique = true;
+                this.columnGönderen.MaxLength = 50;
+                this.columnTelefon.MaxLength = 11;
+                this.columnAdres.MaxLength = 70;
+                this.columnİçerik.MaxLength = 20;
+                this.columnAlıcı.MaxLength = 3;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -637,6 +743,910 @@ namespace TeslimatTakip {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class SubelerDataTable : global::System.Data.TypedTableBase<SubelerRow> {
+            
+            private global::System.Data.DataColumn columnŞube_No;
+            
+            private global::System.Data.DataColumn columnŞube_İsmi;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public SubelerDataTable() {
+                this.TableName = "Subeler";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal SubelerDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected SubelerDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Şube_NoColumn {
+                get {
+                    return this.columnŞube_No;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Şube_İsmiColumn {
+                get {
+                    return this.columnŞube_İsmi;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public SubelerRow this[int index] {
+                get {
+                    return ((SubelerRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event SubelerRowChangeEventHandler SubelerRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event SubelerRowChangeEventHandler SubelerRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event SubelerRowChangeEventHandler SubelerRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event SubelerRowChangeEventHandler SubelerRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddSubelerRow(SubelerRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public SubelerRow AddSubelerRow(string Şube_İsmi) {
+                SubelerRow rowSubelerRow = ((SubelerRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Şube_İsmi};
+                rowSubelerRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSubelerRow);
+                return rowSubelerRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public SubelerRow FindByŞube_No(int Şube_No) {
+                return ((SubelerRow)(this.Rows.Find(new object[] {
+                            Şube_No})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                SubelerDataTable cln = ((SubelerDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new SubelerDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnŞube_No = base.Columns["Şube No"];
+                this.columnŞube_İsmi = base.Columns["Şube İsmi"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnŞube_No = new global::System.Data.DataColumn("Şube No", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnŞube_No);
+                this.columnŞube_İsmi = new global::System.Data.DataColumn("Şube İsmi", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnŞube_İsmi);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnŞube_No}, true));
+                this.columnŞube_No.AutoIncrement = true;
+                this.columnŞube_No.AutoIncrementSeed = -1;
+                this.columnŞube_No.AutoIncrementStep = -1;
+                this.columnŞube_No.AllowDBNull = false;
+                this.columnŞube_No.ReadOnly = true;
+                this.columnŞube_No.Unique = true;
+                this.columnŞube_İsmi.AllowDBNull = false;
+                this.columnŞube_İsmi.MaxLength = 30;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public SubelerRow NewSubelerRow() {
+                return ((SubelerRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new SubelerRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(SubelerRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.SubelerRowChanged != null)) {
+                    this.SubelerRowChanged(this, new SubelerRowChangeEvent(((SubelerRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.SubelerRowChanging != null)) {
+                    this.SubelerRowChanging(this, new SubelerRowChangeEvent(((SubelerRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.SubelerRowDeleted != null)) {
+                    this.SubelerRowDeleted(this, new SubelerRowChangeEvent(((SubelerRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.SubelerRowDeleting != null)) {
+                    this.SubelerRowDeleting(this, new SubelerRowChangeEvent(((SubelerRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveSubelerRow(SubelerRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSetTeslimat ds = new DataSetTeslimat();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "SubelerDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class TeslimatlarDataTable : global::System.Data.TypedTableBase<TeslimatlarRow> {
+            
+            private global::System.Data.DataColumn columnGönderi_Barkod;
+            
+            private global::System.Data.DataColumn columnTeslimat_No;
+            
+            private global::System.Data.DataColumn columnAlıcı;
+            
+            private global::System.Data.DataColumn columnAçıklama;
+            
+            private global::System.Data.DataColumn columnTarih;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TeslimatlarDataTable() {
+                this.TableName = "Teslimatlar";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal TeslimatlarDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected TeslimatlarDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Gönderi_BarkodColumn {
+                get {
+                    return this.columnGönderi_Barkod;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Teslimat_NoColumn {
+                get {
+                    return this.columnTeslimat_No;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AlıcıColumn {
+                get {
+                    return this.columnAlıcı;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AçıklamaColumn {
+                get {
+                    return this.columnAçıklama;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TarihColumn {
+                get {
+                    return this.columnTarih;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TeslimatlarRow this[int index] {
+                get {
+                    return ((TeslimatlarRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event TeslimatlarRowChangeEventHandler TeslimatlarRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event TeslimatlarRowChangeEventHandler TeslimatlarRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event TeslimatlarRowChangeEventHandler TeslimatlarRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event TeslimatlarRowChangeEventHandler TeslimatlarRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddTeslimatlarRow(TeslimatlarRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TeslimatlarRow AddTeslimatlarRow(int Gönderi_Barkod, string Alıcı, string Açıklama, System.DateTime Tarih) {
+                TeslimatlarRow rowTeslimatlarRow = ((TeslimatlarRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Gönderi_Barkod,
+                        null,
+                        Alıcı,
+                        Açıklama,
+                        Tarih};
+                rowTeslimatlarRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTeslimatlarRow);
+                return rowTeslimatlarRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TeslimatlarRow FindByTeslimat_No(int Teslimat_No) {
+                return ((TeslimatlarRow)(this.Rows.Find(new object[] {
+                            Teslimat_No})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                TeslimatlarDataTable cln = ((TeslimatlarDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new TeslimatlarDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnGönderi_Barkod = base.Columns["Gönderi Barkod"];
+                this.columnTeslimat_No = base.Columns["Teslimat No"];
+                this.columnAlıcı = base.Columns["Alıcı"];
+                this.columnAçıklama = base.Columns["Açıklama"];
+                this.columnTarih = base.Columns["Tarih"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnGönderi_Barkod = new global::System.Data.DataColumn("Gönderi Barkod", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGönderi_Barkod);
+                this.columnTeslimat_No = new global::System.Data.DataColumn("Teslimat No", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTeslimat_No);
+                this.columnAlıcı = new global::System.Data.DataColumn("Alıcı", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAlıcı);
+                this.columnAçıklama = new global::System.Data.DataColumn("Açıklama", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAçıklama);
+                this.columnTarih = new global::System.Data.DataColumn("Tarih", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTarih);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnTeslimat_No}, true));
+                this.columnTeslimat_No.AutoIncrement = true;
+                this.columnTeslimat_No.AutoIncrementSeed = -1;
+                this.columnTeslimat_No.AutoIncrementStep = -1;
+                this.columnTeslimat_No.AllowDBNull = false;
+                this.columnTeslimat_No.ReadOnly = true;
+                this.columnTeslimat_No.Unique = true;
+                this.columnAlıcı.MaxLength = 30;
+                this.columnAçıklama.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TeslimatlarRow NewTeslimatlarRow() {
+                return ((TeslimatlarRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new TeslimatlarRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(TeslimatlarRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.TeslimatlarRowChanged != null)) {
+                    this.TeslimatlarRowChanged(this, new TeslimatlarRowChangeEvent(((TeslimatlarRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.TeslimatlarRowChanging != null)) {
+                    this.TeslimatlarRowChanging(this, new TeslimatlarRowChangeEvent(((TeslimatlarRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.TeslimatlarRowDeleted != null)) {
+                    this.TeslimatlarRowDeleted(this, new TeslimatlarRowChangeEvent(((TeslimatlarRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.TeslimatlarRowDeleting != null)) {
+                    this.TeslimatlarRowDeleting(this, new TeslimatlarRowChangeEvent(((TeslimatlarRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveTeslimatlarRow(TeslimatlarRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSetTeslimat ds = new DataSetTeslimat();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "TeslimatlarDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class Geri_BildirimDataTable : global::System.Data.TypedTableBase<Geri_BildirimRow> {
+            
+            private global::System.Data.DataColumn columnTarih;
+            
+            private global::System.Data.DataColumn columnAçıklama;
+            
+            private global::System.Data.DataColumn columnGeri_Bildirim_No;
+            
+            private global::System.Data.DataColumn columnBarkod_No;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Geri_BildirimDataTable() {
+                this.TableName = "Geri_Bildirim";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal Geri_BildirimDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected Geri_BildirimDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TarihColumn {
+                get {
+                    return this.columnTarih;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AçıklamaColumn {
+                get {
+                    return this.columnAçıklama;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Geri_Bildirim_NoColumn {
+                get {
+                    return this.columnGeri_Bildirim_No;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Barkod_NoColumn {
+                get {
+                    return this.columnBarkod_No;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Geri_BildirimRow this[int index] {
+                get {
+                    return ((Geri_BildirimRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Geri_BildirimRowChangeEventHandler Geri_BildirimRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Geri_BildirimRowChangeEventHandler Geri_BildirimRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Geri_BildirimRowChangeEventHandler Geri_BildirimRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Geri_BildirimRowChangeEventHandler Geri_BildirimRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddGeri_BildirimRow(Geri_BildirimRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Geri_BildirimRow AddGeri_BildirimRow(System.DateTime Tarih, string Açıklama, int Barkod_No) {
+                Geri_BildirimRow rowGeri_BildirimRow = ((Geri_BildirimRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Tarih,
+                        Açıklama,
+                        null,
+                        Barkod_No};
+                rowGeri_BildirimRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowGeri_BildirimRow);
+                return rowGeri_BildirimRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Geri_BildirimRow FindByGeri_Bildirim_No(int Geri_Bildirim_No) {
+                return ((Geri_BildirimRow)(this.Rows.Find(new object[] {
+                            Geri_Bildirim_No})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                Geri_BildirimDataTable cln = ((Geri_BildirimDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new Geri_BildirimDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnTarih = base.Columns["Tarih"];
+                this.columnAçıklama = base.Columns["Açıklama"];
+                this.columnGeri_Bildirim_No = base.Columns["Geri Bildirim No"];
+                this.columnBarkod_No = base.Columns["Barkod No"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnTarih = new global::System.Data.DataColumn("Tarih", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTarih);
+                this.columnAçıklama = new global::System.Data.DataColumn("Açıklama", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAçıklama);
+                this.columnGeri_Bildirim_No = new global::System.Data.DataColumn("Geri Bildirim No", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGeri_Bildirim_No);
+                this.columnBarkod_No = new global::System.Data.DataColumn("Barkod No", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBarkod_No);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnGeri_Bildirim_No}, true));
+                this.columnAçıklama.AllowDBNull = false;
+                this.columnAçıklama.MaxLength = 50;
+                this.columnGeri_Bildirim_No.AutoIncrement = true;
+                this.columnGeri_Bildirim_No.AutoIncrementSeed = -1;
+                this.columnGeri_Bildirim_No.AutoIncrementStep = -1;
+                this.columnGeri_Bildirim_No.AllowDBNull = false;
+                this.columnGeri_Bildirim_No.ReadOnly = true;
+                this.columnGeri_Bildirim_No.Unique = true;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Geri_BildirimRow NewGeri_BildirimRow() {
+                return ((Geri_BildirimRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new Geri_BildirimRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(Geri_BildirimRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.Geri_BildirimRowChanged != null)) {
+                    this.Geri_BildirimRowChanged(this, new Geri_BildirimRowChangeEvent(((Geri_BildirimRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.Geri_BildirimRowChanging != null)) {
+                    this.Geri_BildirimRowChanging(this, new Geri_BildirimRowChangeEvent(((Geri_BildirimRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.Geri_BildirimRowDeleted != null)) {
+                    this.Geri_BildirimRowDeleted(this, new Geri_BildirimRowChangeEvent(((Geri_BildirimRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.Geri_BildirimRowDeleting != null)) {
+                    this.Geri_BildirimRowDeleting(this, new Geri_BildirimRowChangeEvent(((Geri_BildirimRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveGeri_BildirimRow(Geri_BildirimRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSetTeslimat ds = new DataSetTeslimat();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "Geri_BildirimDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class GonderilerRow : global::System.Data.DataRow {
@@ -652,209 +1662,477 @@ namespace TeslimatTakip {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Gonderi_Barkod {
+            public int Barkod_No {
                 get {
-                    return ((int)(this[this.tableGonderiler.Gonderi_BarkodColumn]));
+                    return ((int)(this[this.tableGonderiler.Barkod_NoColumn]));
                 }
                 set {
-                    this[this.tableGonderiler.Gonderi_BarkodColumn] = value;
+                    this[this.tableGonderiler.Barkod_NoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Sube_id {
-                get {
-                    try {
-                        return ((int)(this[this.tableGonderiler.Sube_idColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Sube_id\' in table \'Gonderiler\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGonderiler.Sube_idColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Gonderi_isim {
+            public string Gönderen {
                 get {
                     try {
-                        return ((string)(this[this.tableGonderiler.Gonderi_isimColumn]));
+                        return ((string)(this[this.tableGonderiler.GönderenColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Gonderi_isim\' in table \'Gonderiler\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Gönderen\' in table \'Gonderiler\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGonderiler.Gonderi_isimColumn] = value;
+                    this[this.tableGonderiler.GönderenColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Gonderi_Adres {
+            public System.DateTime Tarih {
                 get {
                     try {
-                        return ((string)(this[this.tableGonderiler.Gonderi_AdresColumn]));
+                        return ((global::System.DateTime)(this[this.tableGonderiler.TarihColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Gonderi_Adres\' in table \'Gonderiler\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Tarih\' in table \'Gonderiler\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGonderiler.Gonderi_AdresColumn] = value;
+                    this[this.tableGonderiler.TarihColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Gonderi_Telefon {
+            public string Telefon {
                 get {
                     try {
-                        return ((string)(this[this.tableGonderiler.Gonderi_TelefonColumn]));
+                        return ((string)(this[this.tableGonderiler.TelefonColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Gonderi_Telefon\' in table \'Gonderiler\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Telefon\' in table \'Gonderiler\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGonderiler.Gonderi_TelefonColumn] = value;
+                    this[this.tableGonderiler.TelefonColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Gonderi_icerik {
+            public string Adres {
                 get {
                     try {
-                        return ((string)(this[this.tableGonderiler.Gonderi_icerikColumn]));
+                        return ((string)(this[this.tableGonderiler.AdresColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Gonderi_icerik\' in table \'Gonderiler\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Adres\' in table \'Gonderiler\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGonderiler.Gonderi_icerikColumn] = value;
+                    this[this.tableGonderiler.AdresColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal Gonderi_Ucret {
+            public string İçerik {
                 get {
                     try {
-                        return ((decimal)(this[this.tableGonderiler.Gonderi_UcretColumn]));
+                        return ((string)(this[this.tableGonderiler.İçerikColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Gonderi_Ucret\' in table \'Gonderiler\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'İçerik\' in table \'Gonderiler\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGonderiler.Gonderi_UcretColumn] = value;
+                    this[this.tableGonderiler.İçerikColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime Gonderi_Tarih {
+            public decimal Ücret {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableGonderiler.Gonderi_TarihColumn]));
+                        return ((decimal)(this[this.tableGonderiler.ÜcretColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Gonderi_Tarih\' in table \'Gonderiler\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Ücret\' in table \'Gonderiler\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGonderiler.Gonderi_TarihColumn] = value;
+                    this[this.tableGonderiler.ÜcretColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSube_idNull() {
-                return this.IsNull(this.tableGonderiler.Sube_idColumn);
+            public string Alıcı {
+                get {
+                    try {
+                        return ((string)(this[this.tableGonderiler.AlıcıColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Alıcı\' in table \'Gonderiler\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGonderiler.AlıcıColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSube_idNull() {
-                this[this.tableGonderiler.Sube_idColumn] = global::System.Convert.DBNull;
+            public bool IsGönderenNull() {
+                return this.IsNull(this.tableGonderiler.GönderenColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGonderi_isimNull() {
-                return this.IsNull(this.tableGonderiler.Gonderi_isimColumn);
+            public void SetGönderenNull() {
+                this[this.tableGonderiler.GönderenColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGonderi_isimNull() {
-                this[this.tableGonderiler.Gonderi_isimColumn] = global::System.Convert.DBNull;
+            public bool IsTarihNull() {
+                return this.IsNull(this.tableGonderiler.TarihColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGonderi_AdresNull() {
-                return this.IsNull(this.tableGonderiler.Gonderi_AdresColumn);
+            public void SetTarihNull() {
+                this[this.tableGonderiler.TarihColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGonderi_AdresNull() {
-                this[this.tableGonderiler.Gonderi_AdresColumn] = global::System.Convert.DBNull;
+            public bool IsTelefonNull() {
+                return this.IsNull(this.tableGonderiler.TelefonColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGonderi_TelefonNull() {
-                return this.IsNull(this.tableGonderiler.Gonderi_TelefonColumn);
+            public void SetTelefonNull() {
+                this[this.tableGonderiler.TelefonColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGonderi_TelefonNull() {
-                this[this.tableGonderiler.Gonderi_TelefonColumn] = global::System.Convert.DBNull;
+            public bool IsAdresNull() {
+                return this.IsNull(this.tableGonderiler.AdresColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGonderi_icerikNull() {
-                return this.IsNull(this.tableGonderiler.Gonderi_icerikColumn);
+            public void SetAdresNull() {
+                this[this.tableGonderiler.AdresColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGonderi_icerikNull() {
-                this[this.tableGonderiler.Gonderi_icerikColumn] = global::System.Convert.DBNull;
+            public bool IsİçerikNull() {
+                return this.IsNull(this.tableGonderiler.İçerikColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGonderi_UcretNull() {
-                return this.IsNull(this.tableGonderiler.Gonderi_UcretColumn);
+            public void SetİçerikNull() {
+                this[this.tableGonderiler.İçerikColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGonderi_UcretNull() {
-                this[this.tableGonderiler.Gonderi_UcretColumn] = global::System.Convert.DBNull;
+            public bool IsÜcretNull() {
+                return this.IsNull(this.tableGonderiler.ÜcretColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGonderi_TarihNull() {
-                return this.IsNull(this.tableGonderiler.Gonderi_TarihColumn);
+            public void SetÜcretNull() {
+                this[this.tableGonderiler.ÜcretColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGonderi_TarihNull() {
-                this[this.tableGonderiler.Gonderi_TarihColumn] = global::System.Convert.DBNull;
+            public bool IsAlıcıNull() {
+                return this.IsNull(this.tableGonderiler.AlıcıColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAlıcıNull() {
+                this[this.tableGonderiler.AlıcıColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class SubelerRow : global::System.Data.DataRow {
+            
+            private SubelerDataTable tableSubeler;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal SubelerRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableSubeler = ((SubelerDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Şube_No {
+                get {
+                    return ((int)(this[this.tableSubeler.Şube_NoColumn]));
+                }
+                set {
+                    this[this.tableSubeler.Şube_NoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Şube_İsmi {
+                get {
+                    return ((string)(this[this.tableSubeler.Şube_İsmiColumn]));
+                }
+                set {
+                    this[this.tableSubeler.Şube_İsmiColumn] = value;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class TeslimatlarRow : global::System.Data.DataRow {
+            
+            private TeslimatlarDataTable tableTeslimatlar;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal TeslimatlarRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableTeslimatlar = ((TeslimatlarDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Gönderi_Barkod {
+                get {
+                    try {
+                        return ((int)(this[this.tableTeslimatlar.Gönderi_BarkodColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Gönderi Barkod\' in table \'Teslimatlar\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTeslimatlar.Gönderi_BarkodColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Teslimat_No {
+                get {
+                    return ((int)(this[this.tableTeslimatlar.Teslimat_NoColumn]));
+                }
+                set {
+                    this[this.tableTeslimatlar.Teslimat_NoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Alıcı {
+                get {
+                    try {
+                        return ((string)(this[this.tableTeslimatlar.AlıcıColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Alıcı\' in table \'Teslimatlar\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTeslimatlar.AlıcıColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Açıklama {
+                get {
+                    try {
+                        return ((string)(this[this.tableTeslimatlar.AçıklamaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Açıklama\' in table \'Teslimatlar\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTeslimatlar.AçıklamaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Tarih {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableTeslimatlar.TarihColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Tarih\' in table \'Teslimatlar\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTeslimatlar.TarihColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGönderi_BarkodNull() {
+                return this.IsNull(this.tableTeslimatlar.Gönderi_BarkodColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGönderi_BarkodNull() {
+                this[this.tableTeslimatlar.Gönderi_BarkodColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAlıcıNull() {
+                return this.IsNull(this.tableTeslimatlar.AlıcıColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAlıcıNull() {
+                this[this.tableTeslimatlar.AlıcıColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAçıklamaNull() {
+                return this.IsNull(this.tableTeslimatlar.AçıklamaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAçıklamaNull() {
+                this[this.tableTeslimatlar.AçıklamaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTarihNull() {
+                return this.IsNull(this.tableTeslimatlar.TarihColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTarihNull() {
+                this[this.tableTeslimatlar.TarihColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class Geri_BildirimRow : global::System.Data.DataRow {
+            
+            private Geri_BildirimDataTable tableGeri_Bildirim;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal Geri_BildirimRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableGeri_Bildirim = ((Geri_BildirimDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Tarih {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableGeri_Bildirim.TarihColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Tarih\' in table \'Geri_Bildirim\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGeri_Bildirim.TarihColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Açıklama {
+                get {
+                    return ((string)(this[this.tableGeri_Bildirim.AçıklamaColumn]));
+                }
+                set {
+                    this[this.tableGeri_Bildirim.AçıklamaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Geri_Bildirim_No {
+                get {
+                    return ((int)(this[this.tableGeri_Bildirim.Geri_Bildirim_NoColumn]));
+                }
+                set {
+                    this[this.tableGeri_Bildirim.Geri_Bildirim_NoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Barkod_No {
+                get {
+                    try {
+                        return ((int)(this[this.tableGeri_Bildirim.Barkod_NoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Barkod No\' in table \'Geri_Bildirim\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGeri_Bildirim.Barkod_NoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTarihNull() {
+                return this.IsNull(this.tableGeri_Bildirim.TarihColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTarihNull() {
+                this[this.tableGeri_Bildirim.TarihColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBarkod_NoNull() {
+                return this.IsNull(this.tableGeri_Bildirim.Barkod_NoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBarkod_NoNull() {
+                this[this.tableGeri_Bildirim.Barkod_NoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -878,6 +2156,108 @@ namespace TeslimatTakip {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public GonderilerRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class SubelerRowChangeEvent : global::System.EventArgs {
+            
+            private SubelerRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public SubelerRowChangeEvent(SubelerRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public SubelerRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class TeslimatlarRowChangeEvent : global::System.EventArgs {
+            
+            private TeslimatlarRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TeslimatlarRowChangeEvent(TeslimatlarRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TeslimatlarRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class Geri_BildirimRowChangeEvent : global::System.EventArgs {
+            
+            private Geri_BildirimRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Geri_BildirimRowChangeEvent(Geri_BildirimRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Geri_BildirimRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1017,74 +2397,74 @@ namespace TeslimatTakip.DataSetTeslimatTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Gonderiler";
-            tableMapping.ColumnMappings.Add("Gonderi_Barkod", "Gonderi_Barkod");
-            tableMapping.ColumnMappings.Add("Sube_id", "Sube_id");
-            tableMapping.ColumnMappings.Add("Gonderi_isim", "Gonderi_isim");
-            tableMapping.ColumnMappings.Add("Gonderi_Adres", "Gonderi_Adres");
-            tableMapping.ColumnMappings.Add("Gonderi_Telefon", "Gonderi_Telefon");
-            tableMapping.ColumnMappings.Add("Gonderi_icerik", "Gonderi_icerik");
-            tableMapping.ColumnMappings.Add("Gonderi_Ucret", "Gonderi_Ucret");
-            tableMapping.ColumnMappings.Add("Gonderi_Tarih", "Gonderi_Tarih");
+            tableMapping.ColumnMappings.Add("Barkod No", "Barkod No");
+            tableMapping.ColumnMappings.Add("Gönderen", "Gönderen");
+            tableMapping.ColumnMappings.Add("Tarih", "Tarih");
+            tableMapping.ColumnMappings.Add("Telefon", "Telefon");
+            tableMapping.ColumnMappings.Add("Adres", "Adres");
+            tableMapping.ColumnMappings.Add("İçerik", "İçerik");
+            tableMapping.ColumnMappings.Add("Ücret", "Ücret");
+            tableMapping.ColumnMappings.Add("Alıcı", "Alıcı");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Gonderiler] WHERE (([Gonderi_Barkod] = @Original_Gonderi_Barkod) AND ((@IsNull_Sube_id = 1 AND [Sube_id] IS NULL) OR ([Sube_id] = @Original_Sube_id)) AND ((@IsNull_Gonderi_isim = 1 AND [Gonderi_isim] IS NULL) OR ([Gonderi_isim] = @Original_Gonderi_isim)) AND ((@IsNull_Gonderi_Adres = 1 AND [Gonderi_Adres] IS NULL) OR ([Gonderi_Adres] = @Original_Gonderi_Adres)) AND ((@IsNull_Gonderi_Telefon = 1 AND [Gonderi_Telefon] IS NULL) OR ([Gonderi_Telefon] = @Original_Gonderi_Telefon)) AND ((@IsNull_Gonderi_icerik = 1 AND [Gonderi_icerik] IS NULL) OR ([Gonderi_icerik] = @Original_Gonderi_icerik)) AND ((@IsNull_Gonderi_Ucret = 1 AND [Gonderi_Ucret] IS NULL) OR ([Gonderi_Ucret] = @Original_Gonderi_Ucret)) AND ((@IsNull_Gonderi_Tarih = 1 AND [Gonderi_Tarih] IS NULL) OR ([Gonderi_Tarih] = @Original_Gonderi_Tarih)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Gonderiler] WHERE (([Gonderi_Barkod] = @Original_Barkod_No) AND ((@IsNull_Gönderen = 1 AND [Gonderi_isim] IS NULL) OR ([Gonderi_isim] = @Original_Gönderen)) AND ((@IsNull_Alıcı = 1 AND [Gonderi_Alici] IS NULL) OR ([Gonderi_Alici] = @Original_Alıcı)) AND ((@IsNull_Tarih = 1 AND [Gonderi_Tarih] IS NULL) OR ([Gonderi_Tarih] = @Original_Tarih)) AND ((@IsNull_Telefon = 1 AND [Gonderi_Telefon] IS NULL) OR ([Gonderi_Telefon] = @Original_Telefon)) AND ((@IsNull_Adres = 1 AND [Gonderi_Adres] IS NULL) OR ([Gonderi_Adres] = @Original_Adres)) AND ((@IsNull_İçerik = 1 AND [Gonderi_icerik] IS NULL) OR ([Gonderi_icerik] = @Original_İçerik)) AND ((@IsNull_Ücret = 1 AND [Gonderi_Ucret] IS NULL) OR ([Gonderi_Ucret] = @Original_Ücret)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Barkod", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Sube_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Sube_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_isim", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_isim", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_isim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_isim", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_Adres", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Adres", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Adres", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_Telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Telefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Telefon", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_icerik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_icerik", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_icerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_icerik", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_Ucret", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Ucret", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Ucret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Ucret", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_Tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gönderen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gönderen", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Alıcı", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Telefon", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Adres", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adres", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adres", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_İçerik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İçerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ücret", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ücret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Gonderiler] ([Sube_id], [Gonderi_isim], [Gonderi_Adres], [Gonderi_Telefon], [Gonderi_icerik], [Gonderi_Ucret], [Gonderi_Tarih]) VALUES (@Sube_id, @Gonderi_isim, @Gonderi_Adres, @Gonderi_Telefon, @Gonderi_icerik, @Gonderi_Ucret, @Gonderi_Tarih);
-SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Gonderi_icerik, Gonderi_Ucret, Gonderi_Tarih FROM Gonderiler WHERE (Gonderi_Barkod = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Gonderiler] ([Gonderi_isim], [Gonderi_Alici], [Gonderi_Tarih], [Gonderi_Telefon], [Gonderi_Adres], [Gonderi_icerik], [Gonderi_Ucret]) VALUES (@Gönderen, @Alıcı, @Tarih, @Telefon, @Adres, @İçerik, @Ücret);
+SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret' FROM Gonderiler WHERE (Gonderi_Barkod = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sube_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_isim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_isim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Adres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Telefon", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_icerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_icerik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Ucret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Ucret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gönderen", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefon", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İçerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ücret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [Gonderiler] SET [Sube_id] = @Sube_id, [Gonderi_isim] = @Gonderi_isim, [Gonderi_Adres] = @Gonderi_Adres, [Gonderi_Telefon] = @Gonderi_Telefon, [Gonderi_icerik] = @Gonderi_icerik, [Gonderi_Ucret] = @Gonderi_Ucret, [Gonderi_Tarih] = @Gonderi_Tarih WHERE (([Gonderi_Barkod] = @Original_Gonderi_Barkod) AND ((@IsNull_Sube_id = 1 AND [Sube_id] IS NULL) OR ([Sube_id] = @Original_Sube_id)) AND ((@IsNull_Gonderi_isim = 1 AND [Gonderi_isim] IS NULL) OR ([Gonderi_isim] = @Original_Gonderi_isim)) AND ((@IsNull_Gonderi_Adres = 1 AND [Gonderi_Adres] IS NULL) OR ([Gonderi_Adres] = @Original_Gonderi_Adres)) AND ((@IsNull_Gonderi_Telefon = 1 AND [Gonderi_Telefon] IS NULL) OR ([Gonderi_Telefon] = @Original_Gonderi_Telefon)) AND ((@IsNull_Gonderi_icerik = 1 AND [Gonderi_icerik] IS NULL) OR ([Gonderi_icerik] = @Original_Gonderi_icerik)) AND ((@IsNull_Gonderi_Ucret = 1 AND [Gonderi_Ucret] IS NULL) OR ([Gonderi_Ucret] = @Original_Gonderi_Ucret)) AND ((@IsNull_Gonderi_Tarih = 1 AND [Gonderi_Tarih] IS NULL) OR ([Gonderi_Tarih] = @Original_Gonderi_Tarih)));
-SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Gonderi_icerik, Gonderi_Ucret, Gonderi_Tarih FROM Gonderiler WHERE (Gonderi_Barkod = @Gonderi_Barkod)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Gonderiler] SET [Gonderi_isim] = @Gönderen, [Gonderi_Alici] = @Alıcı, [Gonderi_Tarih] = @Tarih, [Gonderi_Telefon] = @Telefon, [Gonderi_Adres] = @Adres, [Gonderi_icerik] = @İçerik, [Gonderi_Ucret] = @Ücret WHERE (([Gonderi_Barkod] = @Original_Barkod_No) AND ((@IsNull_Gönderen = 1 AND [Gonderi_isim] IS NULL) OR ([Gonderi_isim] = @Original_Gönderen)) AND ((@IsNull_Alıcı = 1 AND [Gonderi_Alici] IS NULL) OR ([Gonderi_Alici] = @Original_Alıcı)) AND ((@IsNull_Tarih = 1 AND [Gonderi_Tarih] IS NULL) OR ([Gonderi_Tarih] = @Original_Tarih)) AND ((@IsNull_Telefon = 1 AND [Gonderi_Telefon] IS NULL) OR ([Gonderi_Telefon] = @Original_Telefon)) AND ((@IsNull_Adres = 1 AND [Gonderi_Adres] IS NULL) OR ([Gonderi_Adres] = @Original_Adres)) AND ((@IsNull_İçerik = 1 AND [Gonderi_icerik] IS NULL) OR ([Gonderi_icerik] = @Original_İçerik)) AND ((@IsNull_Ücret = 1 AND [Gonderi_Ucret] IS NULL) OR ([Gonderi_Ucret] = @Original_Ücret)));
+SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret' FROM Gonderiler WHERE (Gonderi_Barkod = @Gonderi_Barkod)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sube_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_isim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_isim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Adres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Telefon", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_icerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_icerik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Ucret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Ucret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Barkod", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Sube_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Sube_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_isim", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_isim", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_isim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_isim", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_Adres", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Adres", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Adres", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_Telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Telefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Telefon", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_icerik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_icerik", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_icerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_icerik", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_Ucret", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Ucret", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Ucret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Ucret", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gonderi_Tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gonderi_Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Barkod", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Barkod", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gönderen", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefon", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İçerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ücret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gönderen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gönderen", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderen", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Alıcı", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Telefon", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Adres", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adres", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adres", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_İçerik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İçerik", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İçerik", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ücret", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ücret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ücret", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderi_Barkod", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1097,11 +2477,47 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Gonderiler.*\r\nFROM            Gonderiler";
+            this._commandCollection[0].CommandText = @"SELECT        Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret'
+FROM            Gonderiler";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT        Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret'
+FROM            Gonderiler 
+WHERE Gonderi_Tarih BETWEEN @Tarih1 AND @Tarih2";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih1", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih2", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"SELECT        Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Alici AS 'Alıcı', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret'
+FROM            Gonderiler 
+WHERE Gonderi_Tarih IN ('@Tarih')";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = @"INSERT INTO [Gonderiler] (
+[Gonderi_isim], 
+[Gonderi_Tarih], 
+[Gonderi_Telefon], 
+[Gonderi_Adres], 
+[Gonderi_icerik], 
+[Gonderi_Ucret],
+[Gonderi_Alici]
+) 
+VALUES (@Gonderen, @Alici, @Tarih, @Telefon, @Adres, @icerik, @Ucret);
+SELECT Gonderi_Barkod AS 'Barkod No', Gonderi_isim AS 'Gönderen', Gonderi_Tarih AS 'Tarih', Gonderi_Telefon AS 'Telefon', Gonderi_Adres AS 'Adres', Gonderi_icerik AS 'İçerik', Gonderi_Ucret AS 'Ücret' FROM Gonderiler WHERE (Gonderi_Barkod = SCOPE_IDENTITY())";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gonderen", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_isim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Alici", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.NChar, 11, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefon", global::System.Data.SqlDbType.NVarChar, 70, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Adres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Adres", global::System.Data.SqlDbType.NVarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_icerik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@icerik", global::System.Data.SqlDbType.Money, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Ucret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ucret", global::System.Data.SqlDbType.NVarChar, 3, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Alici", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1123,6 +2539,78 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSetTeslimat.GonderilerDataTable GetGonderiListele() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSetTeslimat.GonderilerDataTable dataTable = new DataSetTeslimat.GonderilerDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillGonderiListeleTarihArasi(DataSetTeslimat.GonderilerDataTable dataTable, global::System.Nullable<global::System.DateTime> Tarih1, global::System.Nullable<global::System.DateTime> Tarih2) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((Tarih1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(Tarih1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((Tarih2.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(Tarih2.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetTeslimat.GonderilerDataTable GetGonderiListeleTarihArasi(global::System.Nullable<global::System.DateTime> Tarih1, global::System.Nullable<global::System.DateTime> Tarih2) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((Tarih1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(Tarih1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((Tarih2.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(Tarih2.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            DataSetTeslimat.GonderilerDataTable dataTable = new DataSetTeslimat.GonderilerDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillGonderiListeleTariheGore(DataSetTeslimat.GonderilerDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetTeslimat.GonderilerDataTable GetGonderiListeleTariheGore() {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             DataSetTeslimat.GonderilerDataTable dataTable = new DataSetTeslimat.GonderilerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -1160,64 +2648,307 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertGonderiEkle(string Gonderen, global::System.Nullable<global::System.DateTime> Alici, string Tarih, string Telefon, string Adres, global::System.Nullable<decimal> icerik, string Ucret) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((Gonderen == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Gonderen));
+            }
+            if ((Alici.HasValue == true)) {
+                command.Parameters[1].Value = ((System.DateTime)(Alici.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Tarih == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(Tarih));
+            }
+            if ((Telefon == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(Telefon));
+            }
+            if ((Adres == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(Adres));
+            }
+            if ((icerik.HasValue == true)) {
+                command.Parameters[5].Value = ((decimal)(icerik.Value));
+            }
+            else {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((Ucret == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(Ucret));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class SubelerTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public SubelerTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "Subeler";
+            tableMapping.ColumnMappings.Add("Şube No", "Şube No");
+            tableMapping.ColumnMappings.Add("Şube İsmi", "Şube İsmi");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [Subeler] WHERE (([Sube_id] = @Original_Şube_No) AND ([Sube_ismi] = @" +
+                "Original_Şube_İsmi))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Şube_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Şube_İsmi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube İsmi", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Subeler] ([Sube_ismi]) VALUES (@Şube_İsmi);\r\nSELECT Sube_id AS \'Şube" +
+                " No\', Sube_ismi AS \'Şube İsmi\' FROM Subeler WHERE (Sube_id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Şube_İsmi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube İsmi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = "UPDATE [Subeler] SET [Sube_ismi] = @Şube_İsmi WHERE (([Sube_id] = @Original_Şube_" +
+                "No) AND ([Sube_ismi] = @Original_Şube_İsmi));\r\nSELECT Sube_id AS \'Şube No\', Sube" +
+                "_ismi AS \'Şube İsmi\' FROM Subeler WHERE (Sube_id = @Sube_id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Şube_İsmi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube İsmi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Şube_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Şube_İsmi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Şube İsmi", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sube_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Şube No", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::TeslimatTakip.Properties.Settings.Default.DatabaseTeslimatConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT        Subeler.Sube_id AS \'Şube No\', \r\nSubeler.Sube_ismi AS \'Şube İsmi\' \r\n" +
+                "FROM            Subeler";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "INSERT INTO [Subeler] ([Sube_ismi]) \r\nVALUES (@Sube_ismi);\r\nSELECT Sube_id AS \'Şu" +
+                "be No\', Sube_isim AS \'Şube İsmi\' FROM Subeler WHERE (Sube_id = SCOPE_IDENTITY())" +
+                "";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sube_ismi", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "Sube_ismi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int FillSubeListele(DataSetTeslimat.SubelerDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSetTeslimat.SubelerDataTable GetSubeListele() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSetTeslimat.SubelerDataTable dataTable = new DataSetTeslimat.SubelerDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSetTeslimat.SubelerDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSetTeslimat dataSet) {
+            return this.Adapter.Update(dataSet, "Subeler");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Gonderi_Barkod, global::System.Nullable<int> Original_Sube_id, string Original_Gonderi_isim, string Original_Gonderi_Adres, string Original_Gonderi_Telefon, string Original_Gonderi_icerik, global::System.Nullable<decimal> Original_Gonderi_Ucret, global::System.Nullable<global::System.DateTime> Original_Gonderi_Tarih) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Gonderi_Barkod));
-            if ((Original_Sube_id.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_Sube_id.Value));
+        public virtual int Delete(int Original_Şube_No, string Original_Şube_İsmi) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Şube_No));
+            if ((Original_Şube_İsmi == null)) {
+                throw new global::System.ArgumentNullException("Original_Şube_İsmi");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Gonderi_isim == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Gonderi_isim));
-            }
-            if ((Original_Gonderi_Adres == null)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Gonderi_Adres));
-            }
-            if ((Original_Gonderi_Telefon == null)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Gonderi_Telefon));
-            }
-            if ((Original_Gonderi_icerik == null)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Gonderi_icerik));
-            }
-            if ((Original_Gonderi_Ucret.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((decimal)(Original_Gonderi_Ucret.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Gonderi_Tarih.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((System.DateTime)(Original_Gonderi_Tarih.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Şube_İsmi));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1239,48 +2970,12 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> Sube_id, string Gonderi_isim, string Gonderi_Adres, string Gonderi_Telefon, string Gonderi_icerik, global::System.Nullable<decimal> Gonderi_Ucret, global::System.Nullable<global::System.DateTime> Gonderi_Tarih) {
-            if ((Sube_id.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Sube_id.Value));
+        public virtual int Insert(string Şube_İsmi) {
+            if ((Şube_İsmi == null)) {
+                throw new global::System.ArgumentNullException("Şube_İsmi");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            if ((Gonderi_isim == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Gonderi_isim));
-            }
-            if ((Gonderi_Adres == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Gonderi_Adres));
-            }
-            if ((Gonderi_Telefon == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Gonderi_Telefon));
-            }
-            if ((Gonderi_icerik == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Gonderi_icerik));
-            }
-            if ((Gonderi_Ucret.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((decimal)(Gonderi_Ucret.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((Gonderi_Tarih.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((System.DateTime)(Gonderi_Tarih.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Şube_İsmi));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1302,123 +2997,21 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    global::System.Nullable<int> Sube_id, 
-                    string Gonderi_isim, 
-                    string Gonderi_Adres, 
-                    string Gonderi_Telefon, 
-                    string Gonderi_icerik, 
-                    global::System.Nullable<decimal> Gonderi_Ucret, 
-                    global::System.Nullable<global::System.DateTime> Gonderi_Tarih, 
-                    int Original_Gonderi_Barkod, 
-                    global::System.Nullable<int> Original_Sube_id, 
-                    string Original_Gonderi_isim, 
-                    string Original_Gonderi_Adres, 
-                    string Original_Gonderi_Telefon, 
-                    string Original_Gonderi_icerik, 
-                    global::System.Nullable<decimal> Original_Gonderi_Ucret, 
-                    global::System.Nullable<global::System.DateTime> Original_Gonderi_Tarih, 
-                    int Gonderi_Barkod) {
-            if ((Sube_id.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Sube_id.Value));
+        public virtual int Update(string Şube_İsmi, int Original_Şube_No, string Original_Şube_İsmi, int Sube_id) {
+            if ((Şube_İsmi == null)) {
+                throw new global::System.ArgumentNullException("Şube_İsmi");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Şube_İsmi));
             }
-            if ((Gonderi_isim == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Gonderi_isim));
-            }
-            if ((Gonderi_Adres == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Original_Şube_No));
+            if ((Original_Şube_İsmi == null)) {
+                throw new global::System.ArgumentNullException("Original_Şube_İsmi");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Gonderi_Adres));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_Şube_İsmi));
             }
-            if ((Gonderi_Telefon == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Gonderi_Telefon));
-            }
-            if ((Gonderi_icerik == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Gonderi_icerik));
-            }
-            if ((Gonderi_Ucret.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((decimal)(Gonderi_Ucret.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((Gonderi_Tarih.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(Gonderi_Tarih.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_Gonderi_Barkod));
-            if ((Original_Sube_id.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_Sube_id.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Gonderi_isim == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Gonderi_isim));
-            }
-            if ((Original_Gonderi_Adres == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Gonderi_Adres));
-            }
-            if ((Original_Gonderi_Telefon == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Gonderi_Telefon));
-            }
-            if ((Original_Gonderi_icerik == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Gonderi_icerik));
-            }
-            if ((Original_Gonderi_Ucret.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((decimal)(Original_Gonderi_Ucret.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Gonderi_Tarih.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((System.DateTime)(Original_Gonderi_Tarih.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(Gonderi_Barkod));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Sube_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1439,8 +3032,972 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> Sube_id, string Gonderi_isim, string Gonderi_Adres, string Gonderi_Telefon, string Gonderi_icerik, global::System.Nullable<decimal> Gonderi_Ucret, global::System.Nullable<global::System.DateTime> Gonderi_Tarih, int Original_Gonderi_Barkod, global::System.Nullable<int> Original_Sube_id, string Original_Gonderi_isim, string Original_Gonderi_Adres, string Original_Gonderi_Telefon, string Original_Gonderi_icerik, global::System.Nullable<decimal> Original_Gonderi_Ucret, global::System.Nullable<global::System.DateTime> Original_Gonderi_Tarih) {
-            return this.Update(Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Gonderi_icerik, Gonderi_Ucret, Gonderi_Tarih, Original_Gonderi_Barkod, Original_Sube_id, Original_Gonderi_isim, Original_Gonderi_Adres, Original_Gonderi_Telefon, Original_Gonderi_icerik, Original_Gonderi_Ucret, Original_Gonderi_Tarih, Original_Gonderi_Barkod);
+        public virtual int Update(string Şube_İsmi, int Original_Şube_No, string Original_Şube_İsmi) {
+            return this.Update(Şube_İsmi, Original_Şube_No, Original_Şube_İsmi, Original_Şube_No);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertSubeEkle(string Sube_ismi) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            if ((Sube_ismi == null)) {
+                throw new global::System.ArgumentNullException("Sube_ismi");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Sube_ismi));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class TeslimatlarTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public TeslimatlarTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "Teslimatlar";
+            tableMapping.ColumnMappings.Add("Gönderi Barkod", "Gönderi Barkod");
+            tableMapping.ColumnMappings.Add("Teslimat No", "Teslimat No");
+            tableMapping.ColumnMappings.Add("Alıcı", "Alıcı");
+            tableMapping.ColumnMappings.Add("Açıklama", "Açıklama");
+            tableMapping.ColumnMappings.Add("Tarih", "Tarih");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Teslimatlar] WHERE (([Teslimat_id] = @Original_Teslimat_No) AND ((@IsNull_Gönderi_Barkod = 1 AND [Gonderi_Barkod] IS NULL) OR ([Gonderi_Barkod] = @Original_Gönderi_Barkod)) AND ((@IsNull_Alıcı = 1 AND [Teslimat_Alici] IS NULL) OR ([Teslimat_Alici] = @Original_Alıcı)) AND ((@IsNull_Açıklama = 1 AND [Teslimat_Aciklama] IS NULL) OR ([Teslimat_Aciklama] = @Original_Açıklama)) AND ((@IsNull_Tarih = 1 AND [Teslimat_Tarih] IS NULL) OR ([Teslimat_Tarih] = @Original_Tarih)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Teslimat_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Teslimat No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gönderi_Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderi Barkod", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gönderi_Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderi Barkod", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Alıcı", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Açıklama", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Açıklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Teslimatlar] ([Gonderi_Barkod], [Teslimat_Alici], [Teslimat_Aciklama], [Teslimat_Tarih]) VALUES (@Gönderi_Barkod, @Alıcı, @Açıklama, @Tarih);
+SELECT Teslimat_id AS 'Teslimat No', Gonderi_Barkod AS 'Gönderi Barkod', Teslimat_Alici AS 'Alıcı', Teslimat_Aciklama AS 'Açıklama', Teslimat_Tarih AS 'Tarih' FROM Teslimatlar WHERE (Teslimat_id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gönderi_Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderi Barkod", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Açıklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Teslimatlar] SET [Gonderi_Barkod] = @Gönderi_Barkod, [Teslimat_Alici] = @Alıcı, [Teslimat_Aciklama] = @Açıklama, [Teslimat_Tarih] = @Tarih WHERE (([Teslimat_id] = @Original_Teslimat_No) AND ((@IsNull_Gönderi_Barkod = 1 AND [Gonderi_Barkod] IS NULL) OR ([Gonderi_Barkod] = @Original_Gönderi_Barkod)) AND ((@IsNull_Alıcı = 1 AND [Teslimat_Alici] IS NULL) OR ([Teslimat_Alici] = @Original_Alıcı)) AND ((@IsNull_Açıklama = 1 AND [Teslimat_Aciklama] IS NULL) OR ([Teslimat_Aciklama] = @Original_Açıklama)) AND ((@IsNull_Tarih = 1 AND [Teslimat_Tarih] IS NULL) OR ([Teslimat_Tarih] = @Original_Tarih)));
+SELECT Teslimat_id AS 'Teslimat No', Gonderi_Barkod AS 'Gönderi Barkod', Teslimat_Alici AS 'Alıcı', Teslimat_Aciklama AS 'Açıklama', Teslimat_Tarih AS 'Tarih' FROM Teslimatlar WHERE (Teslimat_id = @Teslimat_id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gönderi_Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderi Barkod", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Açıklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Teslimat_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Teslimat No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gönderi_Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderi Barkod", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gönderi_Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderi Barkod", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Alıcı", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Alıcı", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alıcı", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Açıklama", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Açıklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Teslimat_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Teslimat No", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::TeslimatTakip.Properties.Settings.Default.DatabaseTeslimatConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT        \r\nTeslimat_id AS \'Teslimat No\',\r\nGonderi_Barkod AS \'Gönderi Barkod\'" +
+                ", \r\nTeslimat_Alici AS \'Alıcı\',\r\nTeslimat_Aciklama AS \'Açıklama\', \r\nTeslimat_Tari" +
+                "h AS \'Tarih\' \r\nFROM            Teslimatlar";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT Gonderi_Barkod AS [Gönderi Barkod], Teslimat_Aciklama AS Açıklama, Teslima" +
+                "t_Alici AS Alıcı, Teslimat_Tarih AS Tarih, Teslimat_id AS [Teslimat No] FROM Tes" +
+                "limatlar WHERE (Gonderi_Barkod IN (@Barkod))";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"SELECT        
+Teslimat_id AS 'Teslimat No',
+Gonderi_Barkod AS 'Gönderi Barkod', 
+Teslimat_Alici AS 'Alıcı',
+Teslimat_Aciklama AS 'Açıklama', 
+Teslimat_Tarih AS 'Tarih' 
+FROM            Teslimatlar 
+WHERE (Gonderi_Barkod IN (@Barkod)) AND Teslimat_Tarih BETWEEN @Tarih1 AND @Tarih2";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih1", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih2", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = @"SELECT        
+Teslimat_id AS 'Teslimat No',
+Gonderi_Barkod AS 'Gönderi Barkod', 
+Teslimat_Alici AS 'Alıcı',
+Teslimat_Aciklama AS 'Açıklama', 
+Teslimat_Tarih AS 'Tarih' 
+FROM            Teslimatlar 
+WHERE Gonderi_Barkod LIKE @Barkod AND Teslimat_Tarih IN ('@Tarih')";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barkod", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Gönderi Barkod", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = @"INSERT INTO [Teslimatlar] (
+[Gonderi_Barkod], 
+[Teslimat_Alici], 
+[Teslimat_Aciklama], 
+[Teslimat_Tarih]) 
+VALUES (@Gönderi_Barkod, @Alıcı, @Açıklama, @Tarih);
+
+SELECT Gonderi_Barkod AS 'Gönderi Barkod', Teslimat_id AS 'Teslimat No', Teslimat_Alici AS 'Alıcı', Teslimat_Aciklama AS 'Açıklama', Teslimat_Tarih AS 'Tarih' FROM Teslimatlar WHERE (Teslimat_id = SCOPE_IDENTITY())";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gönderi_Barkod", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Barkod", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Alıcı", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "Teslimat_Alici", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Açıklama", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Teslimat_Aciklama", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Teslimat_Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int FillTeslimatListele(DataSetTeslimat.TeslimatlarDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSetTeslimat.TeslimatlarDataTable GetTeslimatListele() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSetTeslimat.TeslimatlarDataTable dataTable = new DataSetTeslimat.TeslimatlarDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillGonderidenTeslimatListele(DataSetTeslimat.TeslimatlarDataTable dataTable, int Barkod) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetTeslimat.TeslimatlarDataTable GetGonderidenTeslimatListele(int Barkod) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod));
+            DataSetTeslimat.TeslimatlarDataTable dataTable = new DataSetTeslimat.TeslimatlarDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillTeslimatListeleTarihArasi(DataSetTeslimat.TeslimatlarDataTable dataTable, int Barkod, global::System.Nullable<global::System.DateTime> Tarih1, global::System.Nullable<global::System.DateTime> Tarih2) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod));
+            if ((Tarih1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(Tarih1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Tarih2.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(Tarih2.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetTeslimat.TeslimatlarDataTable GetTeslimatListeleTarihArasi(int Barkod, global::System.Nullable<global::System.DateTime> Tarih1, global::System.Nullable<global::System.DateTime> Tarih2) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod));
+            if ((Tarih1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(Tarih1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Tarih2.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(Tarih2.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            DataSetTeslimat.TeslimatlarDataTable dataTable = new DataSetTeslimat.TeslimatlarDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillTeslimatListeleTariheGore(DataSetTeslimat.TeslimatlarDataTable dataTable, global::System.Nullable<int> Barkod) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((Barkod.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetTeslimat.TeslimatlarDataTable GetTeslimatListeleTariheGore(global::System.Nullable<int> Barkod) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((Barkod.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            DataSetTeslimat.TeslimatlarDataTable dataTable = new DataSetTeslimat.TeslimatlarDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSetTeslimat.TeslimatlarDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSetTeslimat dataSet) {
+            return this.Adapter.Update(dataSet, "Teslimatlar");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertTeslimatEkle(global::System.Nullable<int> Gönderi_Barkod, string Alıcı, string Açıklama, global::System.Nullable<global::System.DateTime> Tarih) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
+            if ((Gönderi_Barkod.HasValue == true)) {
+                command.Parameters[0].Value = ((int)(Gönderi_Barkod.Value));
+            }
+            else {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((Alıcı == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Alıcı));
+            }
+            if ((Açıklama == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(Açıklama));
+            }
+            if ((Tarih.HasValue == true)) {
+                command.Parameters[3].Value = ((System.DateTime)(Tarih.Value));
+            }
+            else {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class Geri_BildirimTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public Geri_BildirimTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "Geri_Bildirim";
+            tableMapping.ColumnMappings.Add("Tarih", "Tarih");
+            tableMapping.ColumnMappings.Add("Açıklama", "Açıklama");
+            tableMapping.ColumnMappings.Add("Geri Bildirim No", "Geri Bildirim No");
+            tableMapping.ColumnMappings.Add("Barkod No", "Barkod No");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Geri_Bildirim] WHERE (([Geri_Bildirim_id] = @Original_Geri_Bildirim_No) AND ((@IsNull_Barkod_No = 1 AND [Gonderi_Barkod] IS NULL) OR ([Gonderi_Barkod] = @Original_Barkod_No)) AND ((@IsNull_Tarih = 1 AND [Geri_Bildirim_Tarih] IS NULL) OR ([Geri_Bildirim_Tarih] = @Original_Tarih)) AND ([Geri_Bildirim_Aciklamasi] = @Original_Açıklama))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Geri_Bildirim_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Geri Bildirim No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Tarih", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Açıklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Geri_Bildirim] ([Gonderi_Barkod], [Geri_Bildirim_Tarih], [Geri_Bildirim_Aciklamasi]) VALUES (@Barkod_No, @Tarih, @Açıklama);
+SELECT Geri_Bildirim_id AS 'Geri Bildirim No', Gonderi_Barkod AS 'Barkod No', Geri_Bildirim_Tarih AS 'Tarih', Geri_Bildirim_Aciklamasi AS 'Açıklama' FROM Geri_Bildirim WHERE (Geri_Bildirim_id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Açıklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Geri_Bildirim] SET [Gonderi_Barkod] = @Barkod_No, [Geri_Bildirim_Tarih] = @Tarih, [Geri_Bildirim_Aciklamasi] = @Açıklama WHERE (([Geri_Bildirim_id] = @Original_Geri_Bildirim_No) AND ((@IsNull_Barkod_No = 1 AND [Gonderi_Barkod] IS NULL) OR ([Gonderi_Barkod] = @Original_Barkod_No)) AND ((@IsNull_Tarih = 1 AND [Geri_Bildirim_Tarih] IS NULL) OR ([Geri_Bildirim_Tarih] = @Original_Tarih)) AND ([Geri_Bildirim_Aciklamasi] = @Original_Açıklama));
+SELECT Geri_Bildirim_id AS 'Geri Bildirim No', Gonderi_Barkod AS 'Barkod No', Geri_Bildirim_Tarih AS 'Tarih', Geri_Bildirim_Aciklamasi AS 'Açıklama' FROM Geri_Bildirim WHERE (Geri_Bildirim_id = @Geri_Bildirim_id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Açıklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Geri_Bildirim_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Geri Bildirim No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Barkod_No", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barkod No", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Tarih", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Açıklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Açıklama", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Geri_Bildirim_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Geri Bildirim No", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::TeslimatTakip.Properties.Settings.Default.DatabaseTeslimatConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT        \r\nGeri_Bildirim.Geri_Bildirim_id AS \'Geri Bildirim No\',\r\nGeri_Bildi" +
+                "rim.Gonderi_Barkod AS \'Barkod No\',\r\nGeri_Bildirim.Geri_Bildirim_Tarih AS \'Tarih\'" +
+                ",\r\nGeri_Bildirim.Geri_Bildirim_Aciklamasi AS \'Açıklama\'\r\nFROM Geri_Bildirim";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT        Geri_Bildirim_id AS 'Geri Bildirim No', Gonderi_Barkod AS 'Barkod No', Geri_Bildirim_Tarih AS Tarih, Geri_Bildirim_Aciklamasi AS 'Açıklama'
+FROM            Geri_Bildirim
+WHERE        (Gonderi_Barkod IN (@Barkod)) AND (Geri_Bildirim_Tarih BETWEEN @Tarih1 AND @Tarih2)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih1", global::System.Data.SqlDbType.SmallDateTime, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih2", global::System.Data.SqlDbType.SmallDateTime, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT        Geri_Bildirim_Tarih AS \'Tarih\', \r\nGonderi_Barkod AS \'Gönderi Barkod" +
+                "\', \r\nGeri_Bildirim_Aciklamasi AS \'Açıklama\'\r\nFROM            Geri_Bildirim\r\nWHER" +
+                "E        (Gonderi_Barkod IN (@Barkod))";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barkod", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "INSERT INTO Geri_Bildirim\r\n                         (Gonderi_Barkod, Geri_Bildiri" +
+                "m_Tarih, Geri_Bildirim_Aciklamasi)\r\nVALUES        (@Barkod,@Tarih,@Açıklama)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barkod", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Gonderi_Barkod", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.SmallDateTime, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Geri_Bildirim_Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Açıklama", global::System.Data.SqlDbType.NVarChar, 90, global::System.Data.ParameterDirection.Input, 0, 0, "Geri_Bildirim_Aciklamasi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int FillGeriBildirimListele(DataSetTeslimat.Geri_BildirimDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSetTeslimat.Geri_BildirimDataTable GetGeriBildirimListele() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSetTeslimat.Geri_BildirimDataTable dataTable = new DataSetTeslimat.Geri_BildirimDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillGeriBildirimListeleTarihArasi(DataSetTeslimat.Geri_BildirimDataTable dataTable, int Barkod, global::System.Nullable<global::System.DateTime> Tarih1, global::System.Nullable<global::System.DateTime> Tarih2) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod));
+            if ((Tarih1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(Tarih1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Tarih2.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(Tarih2.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetTeslimat.Geri_BildirimDataTable GetGeriBildirimListeleTarihArasi(int Barkod, global::System.Nullable<global::System.DateTime> Tarih1, global::System.Nullable<global::System.DateTime> Tarih2) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod));
+            if ((Tarih1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(Tarih1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Tarih2.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(Tarih2.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            DataSetTeslimat.Geri_BildirimDataTable dataTable = new DataSetTeslimat.Geri_BildirimDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillGonderidenGeriBildirimListele(DataSetTeslimat.Geri_BildirimDataTable dataTable, int Barkod) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetTeslimat.Geri_BildirimDataTable GetGonderidenGeriBildirimListele(int Barkod) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Barkod));
+            DataSetTeslimat.Geri_BildirimDataTable dataTable = new DataSetTeslimat.Geri_BildirimDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSetTeslimat.Geri_BildirimDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSetTeslimat dataSet) {
+            return this.Adapter.Update(dataSet, "Geri_Bildirim");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_Geri_Bildirim_No, int Original_Barkod_No, System.DateTime Original_Tarih, string Original_Açıklama) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Geri_Bildirim_No));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_Barkod_No));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_Tarih));
+            if ((Original_Açıklama == null)) {
+                throw new global::System.ArgumentNullException("Original_Açıklama");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Açıklama));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int Barkod_No, System.DateTime Tarih, string Açıklama) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Barkod_No));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(Tarih));
+            if ((Açıklama == null)) {
+                throw new global::System.ArgumentNullException("Açıklama");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Açıklama));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int Barkod_No, System.DateTime Tarih, string Açıklama, int Original_Geri_Bildirim_No, int Original_Barkod_No, System.DateTime Original_Tarih, string Original_Açıklama, int Geri_Bildirim_id) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Barkod_No));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(Tarih));
+            if ((Açıklama == null)) {
+                throw new global::System.ArgumentNullException("Açıklama");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Açıklama));
+            }
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_Geri_Bildirim_No));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Barkod_No));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(Original_Tarih));
+            if ((Original_Açıklama == null)) {
+                throw new global::System.ArgumentNullException("Original_Açıklama");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Açıklama));
+            }
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Geri_Bildirim_id));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int Barkod_No, System.DateTime Tarih, string Açıklama, int Original_Geri_Bildirim_No, int Original_Barkod_No, System.DateTime Original_Tarih, string Original_Açıklama) {
+            return this.Update(Barkod_No, Tarih, Açıklama, Original_Geri_Bildirim_No, Original_Barkod_No, Original_Tarih, Original_Açıklama, Original_Geri_Bildirim_No);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertGeriBildirimEkle(global::System.Nullable<int> Barkod, global::System.Nullable<global::System.DateTime> Tarih, string Açıklama) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((Barkod.HasValue == true)) {
+                command.Parameters[0].Value = ((int)(Barkod.Value));
+            }
+            else {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((Tarih.HasValue == true)) {
+                command.Parameters[1].Value = ((System.DateTime)(Tarih.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Açıklama == null)) {
+                throw new global::System.ArgumentNullException("Açıklama");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(Açıklama));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -1457,6 +4014,12 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
         private UpdateOrderOption _updateOrder;
         
         private GonderilerTableAdapter _gonderilerTableAdapter;
+        
+        private SubelerTableAdapter _subelerTableAdapter;
+        
+        private TeslimatlarTableAdapter _teslimatlarTableAdapter;
+        
+        private Geri_BildirimTableAdapter _geri_BildirimTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1489,6 +4052,48 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public SubelerTableAdapter SubelerTableAdapter {
+            get {
+                return this._subelerTableAdapter;
+            }
+            set {
+                this._subelerTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public TeslimatlarTableAdapter TeslimatlarTableAdapter {
+            get {
+                return this._teslimatlarTableAdapter;
+            }
+            set {
+                this._teslimatlarTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public Geri_BildirimTableAdapter Geri_BildirimTableAdapter {
+            get {
+                return this._geri_BildirimTableAdapter;
+            }
+            set {
+                this._geri_BildirimTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -1510,6 +4115,18 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
                             && (this._gonderilerTableAdapter.Connection != null))) {
                     return this._gonderilerTableAdapter.Connection;
                 }
+                if (((this._subelerTableAdapter != null) 
+                            && (this._subelerTableAdapter.Connection != null))) {
+                    return this._subelerTableAdapter.Connection;
+                }
+                if (((this._teslimatlarTableAdapter != null) 
+                            && (this._teslimatlarTableAdapter.Connection != null))) {
+                    return this._teslimatlarTableAdapter.Connection;
+                }
+                if (((this._geri_BildirimTableAdapter != null) 
+                            && (this._geri_BildirimTableAdapter.Connection != null))) {
+                    return this._geri_BildirimTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -1524,6 +4141,15 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
             get {
                 int count = 0;
                 if ((this._gonderilerTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._subelerTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._teslimatlarTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._geri_BildirimTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1546,6 +4172,33 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._subelerTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Subeler.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._subelerTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._teslimatlarTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Teslimatlar.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._teslimatlarTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._geri_BildirimTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Geri_Bildirim.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._geri_BildirimTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -1564,6 +4217,30 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._subelerTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Subeler.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._subelerTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._teslimatlarTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Teslimatlar.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._teslimatlarTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._geri_BildirimTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Geri_Bildirim.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._geri_BildirimTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -1574,6 +4251,30 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(DataSetTeslimat dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._geri_BildirimTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Geri_Bildirim.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._geri_BildirimTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._teslimatlarTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Teslimatlar.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._teslimatlarTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._subelerTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Subeler.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._subelerTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._gonderilerTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Gonderiler.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -1626,6 +4327,21 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
+            if (((this._subelerTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._subelerTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._teslimatlarTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._teslimatlarTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._geri_BildirimTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._geri_BildirimTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -1665,6 +4381,33 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
                     if (this._gonderilerTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._gonderilerTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._gonderilerTableAdapter.Adapter);
+                    }
+                }
+                if ((this._subelerTableAdapter != null)) {
+                    revertConnections.Add(this._subelerTableAdapter, this._subelerTableAdapter.Connection);
+                    this._subelerTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._subelerTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._subelerTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._subelerTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._subelerTableAdapter.Adapter);
+                    }
+                }
+                if ((this._teslimatlarTableAdapter != null)) {
+                    revertConnections.Add(this._teslimatlarTableAdapter, this._teslimatlarTableAdapter.Connection);
+                    this._teslimatlarTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._teslimatlarTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._teslimatlarTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._teslimatlarTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._teslimatlarTableAdapter.Adapter);
+                    }
+                }
+                if ((this._geri_BildirimTableAdapter != null)) {
+                    revertConnections.Add(this._geri_BildirimTableAdapter, this._geri_BildirimTableAdapter.Connection);
+                    this._geri_BildirimTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._geri_BildirimTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._geri_BildirimTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._geri_BildirimTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._geri_BildirimTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1728,6 +4471,18 @@ SELECT Gonderi_Barkod, Sube_id, Gonderi_isim, Gonderi_Adres, Gonderi_Telefon, Go
                 if ((this._gonderilerTableAdapter != null)) {
                     this._gonderilerTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._gonderilerTableAdapter]));
                     this._gonderilerTableAdapter.Transaction = null;
+                }
+                if ((this._subelerTableAdapter != null)) {
+                    this._subelerTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._subelerTableAdapter]));
+                    this._subelerTableAdapter.Transaction = null;
+                }
+                if ((this._teslimatlarTableAdapter != null)) {
+                    this._teslimatlarTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._teslimatlarTableAdapter]));
+                    this._teslimatlarTableAdapter.Transaction = null;
+                }
+                if ((this._geri_BildirimTableAdapter != null)) {
+                    this._geri_BildirimTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._geri_BildirimTableAdapter]));
+                    this._geri_BildirimTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

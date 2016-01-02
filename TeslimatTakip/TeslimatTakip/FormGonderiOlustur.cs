@@ -19,8 +19,31 @@ namespace TeslimatTakip
 
         private void FormGonderiOlustur_Load(object sender, EventArgs e)
         {
+            //Form açılışında gönderiler listeleniyor.
             DataSetTeslimatTableAdapters.GonderilerTableAdapter taGonderiler = new DataSetTeslimatTableAdapters.GonderilerTableAdapter();
             dataGridGonderiOlustur.DataSource = taGonderiler.GetGonderiListele();
+        }
+
+        private void buttonOlustur_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Ekle butonu ile yeni gönderi ekleniyor.
+                DataSetTeslimatTableAdapters.GonderilerTableAdapter taGonderiler = new DataSetTeslimatTableAdapters.GonderilerTableAdapter();
+                //Girilen içerik datasete yükleniyor.
+                taGonderiler.InsertGonderiEkle(textBoxisim.Text, DateTime.Now, textBoxTelefon.Text, textBoxAdres.Text, textBoxicerik.Text, Convert.ToDecimal(textBoxUcret.Text), textBoxAlici.Text);
+                dataGridGonderiOlustur.DataSource = taGonderiler.GetGonderiListele();
+            }
+            catch (Exception)
+            {
+                //Herhangi bir değer girilmezse uyarı veriyor.
+                MessageBox.Show("Geçerli bir değer giriniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void buttoniptal_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }

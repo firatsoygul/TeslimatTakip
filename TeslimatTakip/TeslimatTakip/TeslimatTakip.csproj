@@ -71,6 +71,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGeriBildirimEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGeriBildirimEkle.Designer.cs">
+      <DependentUpon>FormGeriBildirimEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGeriBildirimListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGeriBildirimListele.Designer.cs">
+      <DependentUpon>FormGeriBildirimListele.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGonderiOlustur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,16 +95,60 @@
     <Compile Include="FormGonderiListele.Designer.cs">
       <DependentUpon>FormGonderiListele.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSubeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSubeEkle.Designer.cs">
+      <DependentUpon>FormSubeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSubeListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSubeListele.Designer.cs">
+      <DependentUpon>FormSubeListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeslimatEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeslimatEkle.Designer.cs">
+      <DependentUpon>FormTeslimatEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeslimatListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeslimatListele.Designer.cs">
+      <DependentUpon>FormTeslimatListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeriBildirimTableAdapter.cs" />
+    <Compile Include="Geri_BildirimlerTableAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeriBildirimEkle.resx">
+      <DependentUpon>FormGeriBildirimEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeriBildirimListele.resx">
+      <DependentUpon>FormGeriBildirimListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGonderiOlustur.resx">
       <DependentUpon>FormGonderiOlustur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGonderiListele.resx">
       <DependentUpon>FormGonderiListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSubeEkle.resx">
+      <DependentUpon>FormSubeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSubeListele.resx">
+      <DependentUpon>FormSubeListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeslimatEkle.resx">
+      <DependentUpon>FormTeslimatEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeslimatListele.resx">
+      <DependentUpon>FormTeslimatListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
