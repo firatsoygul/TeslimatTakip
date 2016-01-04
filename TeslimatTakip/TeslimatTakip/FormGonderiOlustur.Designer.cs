@@ -227,6 +227,7 @@
             this.Name = "FormGonderiOlustur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yeni Gönderi Oluştur";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormGonderiOlustur_FormClosed);
             this.Load += new System.EventHandler(this.FormGonderiOlustur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridGonderiOlustur)).EndInit();
             this.panel1.ResumeLayout(false);

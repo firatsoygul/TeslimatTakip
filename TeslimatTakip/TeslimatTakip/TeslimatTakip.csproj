@@ -46,6 +46,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -75,6 +78,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAcilis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAcilis.Designer.cs">
+      <DependentUpon>FormAcilis.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGeriBildirimEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +107,12 @@
     </Compile>
     <Compile Include="FormGonderiListele.Designer.cs">
       <DependentUpon>FormGonderiListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaporlar.Designer.cs">
+      <DependentUpon>FormRaporlar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSubeEkle.cs">
       <SubType>Form</SubType>
@@ -123,12 +138,21 @@
     <Compile Include="FormTeslimatListele.Designer.cs">
       <DependentUpon>FormTeslimatListele.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormYardim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYardim.Designer.cs">
+      <DependentUpon>FormYardim.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeriBildirimTableAdapter.cs" />
     <Compile Include="Geri_BildirimlerTableAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAcilis.resx">
+      <DependentUpon>FormAcilis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeriBildirimEkle.resx">
       <DependentUpon>FormGeriBildirimEkle.cs</DependentUpon>
@@ -142,6 +166,9 @@
     <EmbeddedResource Include="FormGonderiListele.resx">
       <DependentUpon>FormGonderiListele.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRaporlar.resx">
+      <DependentUpon>FormRaporlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSubeEkle.resx">
       <DependentUpon>FormSubeEkle.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +181,9 @@
     <EmbeddedResource Include="FormTeslimatListele.resx">
       <DependentUpon>FormTeslimatListele.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormYardim.resx">
+      <DependentUpon>FormYardim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -162,6 +192,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DataSetTeslimat.xsc">
       <DependentUpon>DataSetTeslimat.xsd</DependentUpon>
@@ -195,6 +226,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseTeslimat.mdf</DependentUpon>
     </Content>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\yardim1.png" />
+    <None Include="Resources\icon128.png" />
+    <None Include="Resources\yardim.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

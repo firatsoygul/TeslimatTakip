@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace TeslimatTakip
     {
         public Form1()
         {
+            CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
         }
 
@@ -64,5 +66,55 @@ namespace TeslimatTakip
             FormGeriBildirimListele frmGBL = new FormGeriBildirimListele();
             frmGBL.ShowDialog();
         }
+
+        private void raporlarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRaporlar frmR = new FormRaporlar();
+            frmR.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            backgroundWorker1.RunWorkerAsync();
+        }
+
+        private void AnaEkranGuncelle()
+        {
+            //Toplam gönderi sayısı ana forma yazdırılıyor.
+            DataSetTeslimatTableAdapters.GonderilerTableAdapter taToplamGonderiAl = new DataSetTeslimatTableAdapters.GonderilerTableAdapter();
+            comboBoxToplamGonderi.DataSource = taToplamGonderiAl.GetToplamGonderiSayisi();
+            comboBoxToplamGonderi.DisplayMember = "Toplam Gönderi";
+            labelToplamGonderi.Text = comboBoxToplamGonderi.Text;
+            comboBoxToplamGonderi.Visible = false;
+            //Toplam teslimat sayısı ana forma yazdırılıyor.
+            DataSetTeslimatTableAdapters.TeslimatlarTableAdapter taToplamTeslimatAl = new DataSetTeslimatTableAdapters.TeslimatlarTableAdapter();
+            comboBoxToplamTeslimat.DataSource = taToplamTeslimatAl.GetToplamTeslimatSayisi();
+            comboBoxToplamTeslimat.DisplayMember = "Toplam Alıcı";
+            labelToplamTeslimat.Text = comboBoxToplamTeslimat.Text;
+            comboBoxToplamTeslimat.Visible = false;
+            //Toplam geri bildirim sayısı ana forma yazdırılıyor.
+            DataSetTeslimatTableAdapters.GonderilerTableAdapter taToplamGeriBildirimAl = new DataSetTeslimatTableAdapters.GonderilerTableAdapter();
+            comboBoxToplamGeriBildirim.DataSource = taToplamGeriBildirimAl.GetToplamKrediKarti();
+            comboBoxToplamGeriBildirim.DisplayMember = "Toplam";
+            labelToplamGeriBildirim.Text = comboBoxToplamGeriBildirim.Text;
+            comboBoxToplamGeriBildirim.Visible = false;
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            AnaEkranGuncelle();
+        }
+
+        private void güncelleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            backgroundWorker1.RunWorkerAsync();
+        }
+
+        private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormYardim frmY = new FormYardim();
+            frmY.ShowDialog();
+        }
+
     }
 }

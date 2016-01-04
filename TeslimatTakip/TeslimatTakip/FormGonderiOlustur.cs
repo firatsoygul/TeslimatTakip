@@ -38,7 +38,7 @@ namespace TeslimatTakip
                 taGonderiler.InsertGonderiEkle(textBoxisim.Text, DateTime.Now, textBoxTelefon.Text, textBoxAdres.Text, textBoxicerik.Text, Convert.ToDecimal(textBoxUcret.Text), textBoxAlici.Text,comboBoxSube.Text);
                 dataGridGonderiOlustur.DataSource = taGonderiler.GetGonderiListele();
             }
-            catch (Exception)
+                catch (Exception)
             {
                 //Herhangi bir değer girilmezse uyarı veriyor.
                 MessageBox.Show("Geçerli bir değer giriniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -48,6 +48,11 @@ namespace TeslimatTakip
         private void buttoniptal_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormGonderiOlustur_FormClosed(object sender, FormClosedEventArgs e)
+        {
+           
         }
 
     }
