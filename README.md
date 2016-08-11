@@ -1,7 +1,7 @@
 # Teslimat Takip
 
 
-Önemli evrak veya kredi kartlarının dağıtımında, gönderi takibi yapmak için hazırlanmıştır.
+Önemli evrak veya kredi kartlarının dağıtımında, gönderi takibi yapmak için hazırlanmıştır (geliştiriliyor).
 
 
 
