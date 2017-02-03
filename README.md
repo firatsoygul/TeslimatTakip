@@ -1,7 +1,6 @@
 # Teslimat Takip
 
-
-Önemli evrak veya kredi kartlarının dağıtımında, gönderi takibi yapmak için hazırlanmıştır (geliştiriliyor).
+Bu uygulama bir öğrenci projesidir. Önemli evrak veya kredi kartlarının dağıtımında, gönderi takibi yapmak için hazırlanmıştır.
 
 
 
