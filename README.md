@@ -1,6 +1,6 @@
 # Teslimat Takip
 
-Bu uygulama bir öğrenci projesidir. Önemli evrak veya kredi kartlarının dağıtımında, gönderi takibi yapmak için hazırlanmıştır.
+Önemli evrak veya kredi kartlarının dağıtımında, gönderi takibi yapmak için hazırlanmıştır.
 
 
 
